@@ -10,4 +10,5 @@
 
 // Convenience
 + (id)sharedInstance;
+
 @end
