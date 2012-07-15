@@ -37,20 +37,20 @@
 		1042AA4A15B28DE300F118A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1042AA4C15B28DE300F118A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1042AA4E15B28DE300F118A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1042AA5215B28DE300F118A7 /* FountainPen-Info.plist */ = {isa = PBXFileReference; path = "FountainPen-Info.plist"; sourceTree = "<group>"; };
+		1042AA5215B28DE300F118A7 /* FountainPen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FountainPen-Info.plist"; sourceTree = "<group>"; };
 		1042AA5415B28DE300F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1042AA5615B28DE300F118A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1042AA5815B28DE300F118A7 /* FountainPen-Prefix.pch */ = {isa = PBXFileReference; path = "FountainPen-Prefix.pch"; sourceTree = "<group>"; };
-		1042AA5915B28DE300F118A7 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1042AA5815B28DE300F118A7 /* FountainPen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FountainPen-Prefix.pch"; sourceTree = "<group>"; };
+		1042AA5915B28DE300F118A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1042AA5A15B28DE300F118A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1042AA5D15B28DE300F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1042AA5F15B28DE300F118A7 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		1042AA5F15B28DE300F118A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1042AA6015B28DE300F118A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1042AA6715B28DE300F118A7 /* FountainPenTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FountainPenTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1042AA6815B28DE300F118A7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1042AA7015B28DE300F118A7 /* FountainPenTests-Info.plist */ = {isa = PBXFileReference; path = "FountainPenTests-Info.plist"; sourceTree = "<group>"; };
+		1042AA7015B28DE300F118A7 /* FountainPenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FountainPenTests-Info.plist"; sourceTree = "<group>"; };
 		1042AA7215B28DE300F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1042AA7415B28DE300F118A7 /* FountainPenTests.h */ = {isa = PBXFileReference; path = FountainPenTests.h; sourceTree = "<group>"; };
+		1042AA7415B28DE300F118A7 /* FountainPenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainPenTests.h; sourceTree = "<group>"; };
 		1042AA7515B28DE300F118A7 /* FountainPenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FountainPenTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
