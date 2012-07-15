@@ -26,6 +26,7 @@
 		1042AAA115B296CD00F118A7 /* FPSharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */; };
 		1042AAA515B2A28600F118A7 /* FPLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AAA415B2A28600F118A7 /* FPLocalize.m */; };
 		1042AAAA15B2A7C900F118A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1042AAAC15B2A7C900F118A7 /* Localizable.strings */; };
+		1042AAB015B2B40800F118A7 /* FPString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AAAF15B2B40800F118A7 /* FPString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		1042AAA415B2A28600F118A7 /* FPLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLocalize.m; sourceTree = "<group>"; };
 		1042AAAB15B2A7C900F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1042AAAD15B2A7D300F118A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1042AAAE15B2B40800F118A7 /* FPString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPString.h; sourceTree = "<group>"; };
+		1042AAAF15B2B40800F118A7 /* FPString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +211,8 @@
 				1042AA9B15B296CD00F118A7 /* FPLog.m */,
 				1042AAA315B2A28600F118A7 /* FPLocalize.h */,
 				1042AAA415B2A28600F118A7 /* FPLocalize.m */,
+				1042AAAE15B2B40800F118A7 /* FPString.h */,
+				1042AAAF15B2B40800F118A7 /* FPString.m */,
 				1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */,
 				1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */,
 			);
@@ -338,6 +343,7 @@
 				1042AAA015B296CD00F118A7 /* FPLog.m in Sources */,
 				1042AAA115B296CD00F118A7 /* FPSharedInstance.m in Sources */,
 				1042AAA515B2A28600F118A7 /* FPLocalize.m in Sources */,
+				1042AAB015B2B40800F118A7 /* FPString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,7 @@
 // Utility
 #import "FPLocalize.h"
 #import "FPLog.h"
+#import "FPString.h"
 #import "FPSharedInstance.h"
 
 // UI

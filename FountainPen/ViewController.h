@@ -5,5 +5,6 @@
 
 - (IBAction)touchedAlertButton:(id)sender;
 - (IBAction)touchedSheetButton:(id)sender;
+- (IBAction)touchedNumberButton:(id)sender;
 
 @end
