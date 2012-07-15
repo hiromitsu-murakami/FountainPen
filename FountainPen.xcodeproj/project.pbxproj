@@ -24,6 +24,8 @@
 		1042AA9F15B296CD00F118A7 /* FPSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA9815B296CD00F118A7 /* FPSheet.m */; };
 		1042AAA015B296CD00F118A7 /* FPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA9B15B296CD00F118A7 /* FPLog.m */; };
 		1042AAA115B296CD00F118A7 /* FPSharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */; };
+		1042AAA515B2A28600F118A7 /* FPLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AAA415B2A28600F118A7 /* FPLocalize.m */; };
+		1042AAAA15B2A7C900F118A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1042AAAC15B2A7C900F118A7 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,10 @@
 		1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSharedInstance.h; sourceTree = "<group>"; };
 		1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSharedInstance.m; sourceTree = "<group>"; };
 		1042AAA215B2971600F118A7 /* FountainPen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainPen.h; sourceTree = "<group>"; };
+		1042AAA315B2A28600F118A7 /* FPLocalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLocalize.h; sourceTree = "<group>"; };
+		1042AAA415B2A28600F118A7 /* FPLocalize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLocalize.m; sourceTree = "<group>"; };
+		1042AAAB15B2A7C900F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1042AAAD15B2A7D300F118A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 			children = (
 				1042AA8A15B28E5A00F118A7 /* View */,
 				1042AA9315B296CD00F118A7 /* FountainPen */,
+				1042AAA715B2A71300F118A7 /* Resources */,
 				1042AA5115B28DE300F118A7 /* Supporting Files */,
 			);
 			path = FountainPen;
@@ -199,10 +206,20 @@
 			children = (
 				1042AA9A15B296CD00F118A7 /* FPLog.h */,
 				1042AA9B15B296CD00F118A7 /* FPLog.m */,
+				1042AAA315B2A28600F118A7 /* FPLocalize.h */,
+				1042AAA415B2A28600F118A7 /* FPLocalize.m */,
 				1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */,
 				1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		1042AAA715B2A71300F118A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1042AAAC15B2A7C900F118A7 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +275,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = 1042AA3B15B28DE300F118A7;
 			productRefGroup = 1042AA4715B28DE300F118A7 /* Products */;
@@ -277,6 +295,7 @@
 			files = (
 				1042AA5515B28DE300F118A7 /* InfoPlist.strings in Resources */,
 				1042AA5E15B28DE300F118A7 /* MainStoryboard.storyboard in Resources */,
+				1042AAAA15B2A7C900F118A7 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +337,7 @@
 				1042AA9F15B296CD00F118A7 /* FPSheet.m in Sources */,
 				1042AAA015B296CD00F118A7 /* FPLog.m in Sources */,
 				1042AAA115B296CD00F118A7 /* FPSharedInstance.m in Sources */,
+				1042AAA515B2A28600F118A7 /* FPLocalize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +382,15 @@
 				1042AA7215B28DE300F118A7 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1042AAAC15B2A7C900F118A7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1042AAAB15B2A7C900F118A7 /* en */,
+				1042AAAD15B2A7D300F118A7 /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
