@@ -1,6 +1,10 @@
 
 #import "FPAlert.h"
 
+#if ! __has_feature(objc_arc)
+#error You need to either convert your project to ARC or add the -fobjc-arc compiler flag.
+#endif
+
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark - MKAlertResponse Class
 

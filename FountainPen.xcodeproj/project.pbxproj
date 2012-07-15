@@ -20,9 +20,10 @@
 		1042AA6B15B28DE300F118A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4C15B28DE300F118A7 /* Foundation.framework */; };
 		1042AA7315B28DE300F118A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1042AA7115B28DE300F118A7 /* InfoPlist.strings */; };
 		1042AA7615B28DE300F118A7 /* FountainPenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA7515B28DE300F118A7 /* FountainPenTests.m */; };
-		1042AA8215B28E4000F118A7 /* FPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA8115B28E4000F118A7 /* FPLog.m */; };
-		1042AA8815B28E4A00F118A7 /* FPAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA8515B28E4A00F118A7 /* FPAlert.m */; };
-		1042AA8915B28E4A00F118A7 /* FPSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA8715B28E4A00F118A7 /* FPSheet.m */; };
+		1042AA9E15B296CD00F118A7 /* FPAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA9615B296CD00F118A7 /* FPAlert.m */; };
+		1042AA9F15B296CD00F118A7 /* FPSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA9815B296CD00F118A7 /* FPSheet.m */; };
+		1042AAA015B296CD00F118A7 /* FPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA9B15B296CD00F118A7 /* FPLog.m */; };
+		1042AAA115B296CD00F118A7 /* FPSharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +56,15 @@
 		1042AA7215B28DE300F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1042AA7415B28DE300F118A7 /* FountainPenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainPenTests.h; sourceTree = "<group>"; };
 		1042AA7515B28DE300F118A7 /* FountainPenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FountainPenTests.m; sourceTree = "<group>"; };
-		1042AA8015B28E4000F118A7 /* FPLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLog.h; sourceTree = "<group>"; };
-		1042AA8115B28E4000F118A7 /* FPLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLog.m; sourceTree = "<group>"; };
-		1042AA8415B28E4A00F118A7 /* FPAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAlert.h; sourceTree = "<group>"; };
-		1042AA8515B28E4A00F118A7 /* FPAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAlert.m; sourceTree = "<group>"; };
-		1042AA8615B28E4A00F118A7 /* FPSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSheet.h; sourceTree = "<group>"; };
-		1042AA8715B28E4A00F118A7 /* FPSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSheet.m; sourceTree = "<group>"; };
+		1042AA9515B296CD00F118A7 /* FPAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAlert.h; sourceTree = "<group>"; };
+		1042AA9615B296CD00F118A7 /* FPAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAlert.m; sourceTree = "<group>"; };
+		1042AA9715B296CD00F118A7 /* FPSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSheet.h; sourceTree = "<group>"; };
+		1042AA9815B296CD00F118A7 /* FPSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSheet.m; sourceTree = "<group>"; };
+		1042AA9A15B296CD00F118A7 /* FPLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLog.h; sourceTree = "<group>"; };
+		1042AA9B15B296CD00F118A7 /* FPLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLog.m; sourceTree = "<group>"; };
+		1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSharedInstance.h; sourceTree = "<group>"; };
+		1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSharedInstance.m; sourceTree = "<group>"; };
+		1042AAA215B2971600F118A7 /* FountainPen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainPen.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				1042AA8A15B28E5A00F118A7 /* View */,
-				1042AA7F15B28E4000F118A7 /* Utility */,
-				1042AA8315B28E4A00F118A7 /* UI */,
+				1042AA9315B296CD00F118A7 /* FountainPen */,
 				1042AA5115B28DE300F118A7 /* Supporting Files */,
 			);
 			path = FountainPen;
@@ -158,26 +161,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1042AA7F15B28E4000F118A7 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				1042AA8015B28E4000F118A7 /* FPLog.h */,
-				1042AA8115B28E4000F118A7 /* FPLog.m */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		1042AA8315B28E4A00F118A7 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				1042AA8415B28E4A00F118A7 /* FPAlert.h */,
-				1042AA8515B28E4A00F118A7 /* FPAlert.m */,
-				1042AA8615B28E4A00F118A7 /* FPSheet.h */,
-				1042AA8715B28E4A00F118A7 /* FPSheet.m */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		1042AA8A15B28E5A00F118A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +171,38 @@
 				1042AA6015B28DE300F118A7 /* ViewController.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		1042AA9315B296CD00F118A7 /* FountainPen */ = {
+			isa = PBXGroup;
+			children = (
+				1042AAA215B2971600F118A7 /* FountainPen.h */,
+				1042AA9915B296CD00F118A7 /* Utility */,
+				1042AA9415B296CD00F118A7 /* UI */,
+			);
+			path = FountainPen;
+			sourceTree = "<group>";
+		};
+		1042AA9415B296CD00F118A7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA9515B296CD00F118A7 /* FPAlert.h */,
+				1042AA9615B296CD00F118A7 /* FPAlert.m */,
+				1042AA9715B296CD00F118A7 /* FPSheet.h */,
+				1042AA9815B296CD00F118A7 /* FPSheet.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1042AA9915B296CD00F118A7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA9A15B296CD00F118A7 /* FPLog.h */,
+				1042AA9B15B296CD00F118A7 /* FPLog.m */,
+				1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */,
+				1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +314,10 @@
 				1042AA5715B28DE300F118A7 /* main.m in Sources */,
 				1042AA5B15B28DE300F118A7 /* AppDelegate.m in Sources */,
 				1042AA6115B28DE300F118A7 /* ViewController.m in Sources */,
-				1042AA8215B28E4000F118A7 /* FPLog.m in Sources */,
-				1042AA8815B28E4A00F118A7 /* FPAlert.m in Sources */,
-				1042AA8915B28E4A00F118A7 /* FPSheet.m in Sources */,
+				1042AA9E15B296CD00F118A7 /* FPAlert.m in Sources */,
+				1042AA9F15B296CD00F118A7 /* FPSheet.m in Sources */,
+				1042AAA015B296CD00F118A7 /* FPLog.m in Sources */,
+				1042AAA115B296CD00F118A7 /* FPSharedInstance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
