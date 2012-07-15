@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1042AA4B15B28DE300F118A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4A15B28DE300F118A7 /* UIKit.framework */; };
+		1042AA4D15B28DE300F118A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4C15B28DE300F118A7 /* Foundation.framework */; };
+		1042AA4F15B28DE300F118A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4E15B28DE300F118A7 /* CoreGraphics.framework */; };
+		1042AA5515B28DE300F118A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1042AA5315B28DE300F118A7 /* InfoPlist.strings */; };
+		1042AA5715B28DE300F118A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA5615B28DE300F118A7 /* main.m */; };
+		1042AA5B15B28DE300F118A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA5A15B28DE300F118A7 /* AppDelegate.m */; };
+		1042AA5E15B28DE300F118A7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1042AA5C15B28DE300F118A7 /* MainStoryboard.storyboard */; };
+		1042AA6115B28DE300F118A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA6015B28DE300F118A7 /* ViewController.m */; };
+		1042AA6915B28DE300F118A7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA6815B28DE300F118A7 /* SenTestingKit.framework */; };
+		1042AA6A15B28DE300F118A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4A15B28DE300F118A7 /* UIKit.framework */; };
+		1042AA6B15B28DE300F118A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4C15B28DE300F118A7 /* Foundation.framework */; };
+		1042AA7315B28DE300F118A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1042AA7115B28DE300F118A7 /* InfoPlist.strings */; };
+		1042AA7615B28DE300F118A7 /* FountainPenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA7515B28DE300F118A7 /* FountainPenTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1042AA6C15B28DE300F118A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1042AA3D15B28DE300F118A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1042AA4515B28DE300F118A7;
+			remoteInfo = FountainPen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1042AA4615B28DE300F118A7 /* FountainPen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FountainPen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1042AA4A15B28DE300F118A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1042AA4C15B28DE300F118A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1042AA4E15B28DE300F118A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1042AA5215B28DE300F118A7 /* FountainPen-Info.plist */ = {isa = PBXFileReference; path = "FountainPen-Info.plist"; sourceTree = "<group>"; };
+		1042AA5415B28DE300F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1042AA5615B28DE300F118A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1042AA5815B28DE300F118A7 /* FountainPen-Prefix.pch */ = {isa = PBXFileReference; path = "FountainPen-Prefix.pch"; sourceTree = "<group>"; };
+		1042AA5915B28DE300F118A7 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1042AA5A15B28DE300F118A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1042AA5D15B28DE300F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1042AA5F15B28DE300F118A7 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		1042AA6015B28DE300F118A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1042AA6715B28DE300F118A7 /* FountainPenTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FountainPenTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1042AA6815B28DE300F118A7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1042AA7015B28DE300F118A7 /* FountainPenTests-Info.plist */ = {isa = PBXFileReference; path = "FountainPenTests-Info.plist"; sourceTree = "<group>"; };
+		1042AA7215B28DE300F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1042AA7415B28DE300F118A7 /* FountainPenTests.h */ = {isa = PBXFileReference; path = FountainPenTests.h; sourceTree = "<group>"; };
+		1042AA7515B28DE300F118A7 /* FountainPenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FountainPenTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1042AA4315B28DE300F118A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1042AA4B15B28DE300F118A7 /* UIKit.framework in Frameworks */,
+				1042AA4D15B28DE300F118A7 /* Foundation.framework in Frameworks */,
+				1042AA4F15B28DE300F118A7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1042AA6315B28DE300F118A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1042AA6915B28DE300F118A7 /* SenTestingKit.framework in Frameworks */,
+				1042AA6A15B28DE300F118A7 /* UIKit.framework in Frameworks */,
+				1042AA6B15B28DE300F118A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1042AA3B15B28DE300F118A7 = {
+			isa = PBXGroup;
+			children = (
+				1042AA5015B28DE300F118A7 /* FountainPen */,
+				1042AA6E15B28DE300F118A7 /* FountainPenTests */,
+				1042AA4915B28DE300F118A7 /* Frameworks */,
+				1042AA4715B28DE300F118A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1042AA4715B28DE300F118A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA4615B28DE300F118A7 /* FountainPen.app */,
+				1042AA6715B28DE300F118A7 /* FountainPenTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1042AA4915B28DE300F118A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA4A15B28DE300F118A7 /* UIKit.framework */,
+				1042AA4C15B28DE300F118A7 /* Foundation.framework */,
+				1042AA4E15B28DE300F118A7 /* CoreGraphics.framework */,
+				1042AA6815B28DE300F118A7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1042AA5015B28DE300F118A7 /* FountainPen */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA5915B28DE300F118A7 /* AppDelegate.h */,
+				1042AA5A15B28DE300F118A7 /* AppDelegate.m */,
+				1042AA5C15B28DE300F118A7 /* MainStoryboard.storyboard */,
+				1042AA5F15B28DE300F118A7 /* ViewController.h */,
+				1042AA6015B28DE300F118A7 /* ViewController.m */,
+				1042AA5115B28DE300F118A7 /* Supporting Files */,
+			);
+			path = FountainPen;
+			sourceTree = "<group>";
+		};
+		1042AA5115B28DE300F118A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA5215B28DE300F118A7 /* FountainPen-Info.plist */,
+				1042AA5315B28DE300F118A7 /* InfoPlist.strings */,
+				1042AA5615B28DE300F118A7 /* main.m */,
+				1042AA5815B28DE300F118A7 /* FountainPen-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1042AA6E15B28DE300F118A7 /* FountainPenTests */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA7415B28DE300F118A7 /* FountainPenTests.h */,
+				1042AA7515B28DE300F118A7 /* FountainPenTests.m */,
+				1042AA6F15B28DE300F118A7 /* Supporting Files */,
+			);
+			path = FountainPenTests;
+			sourceTree = "<group>";
+		};
+		1042AA6F15B28DE300F118A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA7015B28DE300F118A7 /* FountainPenTests-Info.plist */,
+				1042AA7115B28DE300F118A7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1042AA4515B28DE300F118A7 /* FountainPen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1042AA7915B28DE300F118A7 /* Build configuration list for PBXNativeTarget "FountainPen" */;
+			buildPhases = (
+				1042AA4215B28DE300F118A7 /* Sources */,
+				1042AA4315B28DE300F118A7 /* Frameworks */,
+				1042AA4415B28DE300F118A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FountainPen;
+			productName = FountainPen;
+			productReference = 1042AA4615B28DE300F118A7 /* FountainPen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1042AA6615B28DE300F118A7 /* FountainPenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1042AA7C15B28DE300F118A7 /* Build configuration list for PBXNativeTarget "FountainPenTests" */;
+			buildPhases = (
+				1042AA6215B28DE300F118A7 /* Sources */,
+				1042AA6315B28DE300F118A7 /* Frameworks */,
+				1042AA6415B28DE300F118A7 /* Resources */,
+				1042AA6515B28DE300F118A7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1042AA6D15B28DE300F118A7 /* PBXTargetDependency */,
+			);
+			name = FountainPenTests;
+			productName = FountainPenTests;
+			productReference = 1042AA6715B28DE300F118A7 /* FountainPenTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1042AA3D15B28DE300F118A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 1042AA4015B28DE300F118A7 /* Build configuration list for PBXProject "FountainPen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1042AA3B15B28DE300F118A7;
+			productRefGroup = 1042AA4715B28DE300F118A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1042AA4515B28DE300F118A7 /* FountainPen */,
+				1042AA6615B28DE300F118A7 /* FountainPenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1042AA4415B28DE300F118A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1042AA5515B28DE300F118A7 /* InfoPlist.strings in Resources */,
+				1042AA5E15B28DE300F118A7 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1042AA6415B28DE300F118A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1042AA7315B28DE300F118A7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1042AA6515B28DE300F118A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1042AA4215B28DE300F118A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1042AA5715B28DE300F118A7 /* main.m in Sources */,
+				1042AA5B15B28DE300F118A7 /* AppDelegate.m in Sources */,
+				1042AA6115B28DE300F118A7 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1042AA6215B28DE300F118A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1042AA7615B28DE300F118A7 /* FountainPenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1042AA6D15B28DE300F118A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1042AA4515B28DE300F118A7 /* FountainPen */;
+			targetProxy = 1042AA6C15B28DE300F118A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1042AA5315B28DE300F118A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1042AA5415B28DE300F118A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1042AA5C15B28DE300F118A7 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1042AA5D15B28DE300F118A7 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		1042AA7115B28DE300F118A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1042AA7215B28DE300F118A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1042AA7715B28DE300F118A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1042AA7815B28DE300F118A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1042AA7A15B28DE300F118A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FountainPen/FountainPen-Prefix.pch";
+				INFOPLIST_FILE = "FountainPen/FountainPen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1042AA7B15B28DE300F118A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FountainPen/FountainPen-Prefix.pch";
+				INFOPLIST_FILE = "FountainPen/FountainPen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1042AA7D15B28DE300F118A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FountainPen.app/FountainPen";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FountainPen/FountainPen-Prefix.pch";
+				INFOPLIST_FILE = "FountainPenTests/FountainPenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1042AA7E15B28DE300F118A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FountainPen.app/FountainPen";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FountainPen/FountainPen-Prefix.pch";
+				INFOPLIST_FILE = "FountainPenTests/FountainPenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1042AA4015B28DE300F118A7 /* Build configuration list for PBXProject "FountainPen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1042AA7715B28DE300F118A7 /* Debug */,
+				1042AA7815B28DE300F118A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1042AA7915B28DE300F118A7 /* Build configuration list for PBXNativeTarget "FountainPen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1042AA7A15B28DE300F118A7 /* Debug */,
+				1042AA7B15B28DE300F118A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1042AA7C15B28DE300F118A7 /* Build configuration list for PBXNativeTarget "FountainPenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1042AA7D15B28DE300F118A7 /* Debug */,
+				1042AA7E15B28DE300F118A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1042AA3D15B28DE300F118A7 /* Project object */;
+}
