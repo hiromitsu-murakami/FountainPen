@@ -17,12 +17,14 @@
 @dynamic    isCancel;
 @dynamic    isDestructive;
 
+// Convenience
 + (FPSheetResponse *)createWithSheet:(UIActionSheet *)sheet
                                index:(NSInteger)index
 {
     return [[[self class] alloc] initWithSheet:sheet index:index];
 }
 
+// initial
 - (id)initWithSheet:(UIActionSheet *)sheet
               index:(NSInteger)index
 {
@@ -34,12 +36,15 @@
     return self;
 }
 
+// Public
+// is selected cancel button
 - (BOOL)isCancel
 {
     return (self.index == self.sheet.cancelButtonIndex);
 }
 
-
+// Public
+// is selected destructive button
 - (BOOL)isDestructive
 {
     return (self.index == self.sheet.destructiveButtonIndex);
@@ -60,6 +65,7 @@
 
 #pragma mark - Life Cycle
 
+// Public
 // Show Sheet
 + (FPSheet *)show:(NSString *)title
            cancel:(NSString *)cancel

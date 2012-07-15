@@ -121,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				1042AA8A15B28E5A00F118A7 /* View */,
-				1042AA8315B28E4A00F118A7 /* UI */,
 				1042AA7F15B28E4000F118A7 /* Utility */,
+				1042AA8315B28E4A00F118A7 /* UI */,
 				1042AA5115B28DE300F118A7 /* Supporting Files */,
 			);
 			path = FountainPen;
@@ -471,6 +471,7 @@
 				1042AA7B15B28DE300F118A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1042AA7C15B28DE300F118A7 /* Build configuration list for PBXNativeTarget "FountainPenTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +480,7 @@
 				1042AA7E15B28DE300F118A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

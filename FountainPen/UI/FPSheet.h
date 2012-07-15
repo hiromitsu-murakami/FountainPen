@@ -3,6 +3,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Blocks argument for Sheet
+//
 @interface FPSheetResponse : NSObject
 @property (readonly, nonatomic, strong) UIActionSheet *sheet;
 @property (readonly, nonatomic)         NSInteger     index;
@@ -13,11 +14,13 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Blocks type for Sheet
+//
 typedef void (^sheet_block_t)(FPSheetResponse *sheet);
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // ActionSheet for Blocks
+//
 @interface FPSheet : UIActionSheet
 
 // Show Sheet

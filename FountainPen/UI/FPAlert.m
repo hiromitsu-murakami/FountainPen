@@ -52,6 +52,7 @@
 
 #pragma mark - Life Cycle
 
+// Public
 // OK only
 + (FPAlert *)showOK:(NSString *)title
             message:(NSString *)message
@@ -61,6 +62,7 @@
                      completion:nil];
 }
 
+// Public
 // OK only + Blocks
 + (FPAlert *)showOK:(NSString *)title
             message:(NSString *)message
@@ -73,6 +75,7 @@
                    completion:block];
 }
 
+// Public
 // Show Alert
 + (FPAlert *)show:(NSString *)title
           message:(NSString *)message

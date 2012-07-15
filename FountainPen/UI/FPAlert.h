@@ -3,6 +3,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Blocks argument for Alert
+//
 @interface FPAlertResponse : NSObject
 @property (readonly, nonatomic, strong) UIAlertView *alert;
 @property (readonly, nonatomic)         NSInteger   index;
@@ -12,11 +13,13 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Blocks type for Alert
+//
 typedef void (^alert_block_t)(FPAlertResponse *alert);
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // AlertView for Blocks
+//
 @interface FPAlert : UIAlertView
 
 // OK only
