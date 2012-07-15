@@ -29,21 +29,17 @@
            cancel:L10n(@"Cancel")
            others:[NSArray arrayWithObjects:@"A", @"B", nil]
        completion:^(FPAlertResponse *alert) {
+           fp(@"alert index %d", alert.index);
+           
            if (alert.isCancel) {
                fp(@"alert cancel");
                return;
            }
            
            switch (alert.indexInOthers) {
-               case 0:
-                   fp(@"alert others A");
-                   break;
-               case 1:
-                   fp(@"alert others B");
-                   break;
-               default:
-                   fp(@"alert default");
-                   break;
+               case 0:  { fp(@"alert others A"); break; }
+               case 1:  { fp(@"alert others B"); break; }
+               default: { fp(@"alert default");  break; }
            }
        }];
 }
@@ -59,6 +55,8 @@
       destructive:L10n(@"Destructive")
            others:[NSArray arrayWithObjects:@"A", @"B", nil]
        completion:^(FPSheetResponse *sheet) {
+           fp(@"sheet index %d", sheet.index);
+           
            if (sheet.isCancel) {
                fp(@"sheet cancel");
                return;
@@ -69,15 +67,9 @@
            }
            
            switch (sheet.indexInOthers) {
-               case 0:
-                   fp(@"sheet others A");
-                   break;
-               case 1:
-                   fp(@"sheet others B");
-                   break;
-               default:
-                   fp(@"sheet default");
-                   break;
+               case 0:  { fp(@"sheet others A"); break; }
+               case 1:  { fp(@"sheet others B"); break; }
+               default: { fp(@"sheet default");  break; }
            }
        }];
 }
