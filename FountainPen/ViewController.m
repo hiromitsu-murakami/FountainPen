@@ -2,7 +2,7 @@
 
 #import "ViewController.h"
 
-#import "FountainPen/FountainPen.h"
+#import "FountainPen.h"
 
 @interface ShObj : FPSharedInstance
 @end
@@ -31,10 +31,11 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+// Alert Button
 - (IBAction)touchedAlertButton:(id)sender
 {
     ShObj *so = [ShObj sharedInstance];
-    fp(@"ShObj a0 %@", so);
+    fp(@"ShObj %@", so);
     
     [FPAlert show:@"Title"
           message:@"Message"
@@ -50,10 +51,11 @@
        }];
 }
 
+// Sheet Button
 - (IBAction)touchedSheetButton:(id)sender
 {
     ShObj *so = [ShObj sharedInstance];
-    fp(@"ShObj b0 %@", so);
+    fp(@"ShObj %@", so);
     
     [FPSheet show:@"Title"
            cancel:@"Cancel"
