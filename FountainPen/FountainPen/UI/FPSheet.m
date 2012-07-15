@@ -11,13 +11,12 @@
 @interface FPSheetResponse ()
 @property (readwrite, nonatomic, strong) UIActionSheet *sheet;
 @property (readwrite, nonatomic)         NSInteger     index;
-@property (readwrite, nonatomic)         BOOL          isCancel;
-@property (readwrite, nonatomic)         BOOL          isDestructive;
 @end
 
 @implementation FPSheetResponse
 @synthesize sheet = _sheet;
 @synthesize index = _index;
+@dynamic    indexInOthers;
 @dynamic    isCancel;
 @dynamic    isDestructive;
 
@@ -38,6 +37,13 @@
         self.index = index;
     }
     return self;
+}
+
+// Public
+// selected button index in other buttons
+- (NSInteger)indexInOthers
+{
+    return self.index - self.sheet.firstOtherButtonIndex;
 }
 
 // Public

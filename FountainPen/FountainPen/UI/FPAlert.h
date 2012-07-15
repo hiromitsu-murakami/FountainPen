@@ -5,9 +5,10 @@
 // Blocks argument for Alert
 //
 @interface FPAlertResponse : NSObject
-@property (readonly, nonatomic, strong) UIAlertView *alert;
-@property (readonly, nonatomic)         NSInteger   index;
-@property (readonly, nonatomic)         BOOL        isCancel;
+@property (readonly, nonatomic, strong) UIAlertView *alert; // alert view
+@property (readonly, nonatomic) NSInteger index;            // selected index in all buttons
+@property (readonly, nonatomic) NSInteger indexInOthers;    // selected index in other buttons
+@property (readonly, nonatomic) BOOL      isCancel;         // is selected cancel button
 @end
 
 

@@ -34,7 +34,17 @@
                return;
            }
            
-           fp(@"alert others %d", alert.index);
+           switch (alert.indexInOthers) {
+               case 0:
+                   fp(@"alert others A");
+                   break;
+               case 1:
+                   fp(@"alert others B");
+                   break;
+               default:
+                   fp(@"alert default");
+                   break;
+           }
        }];
 }
 
@@ -58,7 +68,17 @@
                return;
            }
            
-           fp(@"sheet others %d", sheet.index);
+           switch (sheet.indexInOthers) {
+               case 0:
+                   fp(@"sheet others A");
+                   break;
+               case 1:
+                   fp(@"sheet others B");
+                   break;
+               default:
+                   fp(@"sheet default");
+                   break;
+           }
        }];
 }
 @end

@@ -11,20 +11,22 @@
 @interface FPAlertResponse ()
 @property (readwrite, nonatomic, strong) UIAlertView *alert;
 @property (readwrite, nonatomic)         NSInteger   index;
-@property (readwrite, nonatomic)         BOOL        isCancel;
 @end
 
 @implementation FPAlertResponse
 @synthesize alert = _alert;
 @synthesize index = _index;
+@dynamic    indexInOthers;
 @dynamic    isCancel;
 
+// Convenience
 + (FPAlertResponse *)createWithAlert:(UIAlertView *)alert
                                index:(NSInteger)index
 {
     return [[[self class] alloc] initWithAlert:alert index:index];
 }
 
+// initial
 - (id)initWithAlert:(UIAlertView *)alert
               index:(NSInteger)index
 {
@@ -36,6 +38,15 @@
     return self;
 }
 
+// Public
+// selected button index in other buttons
+- (NSInteger)indexInOthers
+{
+    return self.index - self.alert.firstOtherButtonIndex;
+}
+
+// Public
+// is selected cancel button
 - (BOOL)isCancel
 {
     return (self.index == self.alert.cancelButtonIndex);
