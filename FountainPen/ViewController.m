@@ -37,9 +37,9 @@
     ShObj *so = [ShObj sharedInstance];
     fp(@"ShObj %@", so);
     
-    [FPAlert show:@"Title"
-          message:@"Message"
-           cancel:@"Cancel"
+    [FPAlert show:L10n(@"Title")
+          message:L10n(@"Message")
+           cancel:L10n(@"Cancel")
            others:[NSArray arrayWithObjects:@"A", @"B", nil]
        completion:^(FPAlertResponse *alert) {
            if (alert.isCancel) {
@@ -57,9 +57,9 @@
     ShObj *so = [ShObj sharedInstance];
     fp(@"ShObj %@", so);
     
-    [FPSheet show:@"Title"
-           cancel:@"Cancel"
-      destructive:@"Destructive"
+    [FPSheet show:L10n(@"Title")
+           cancel:L10n(@"Cancel")
+      destructive:L10n(@"Destructive")
            others:[NSArray arrayWithObjects:@"A", @"B", nil]
        completion:^(FPSheetResponse *sheet) {
            if (sheet.isCancel) {
