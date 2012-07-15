@@ -4,9 +4,9 @@
 
 #import "FountainPen/FountainPen.h"
 
-@interface SO : FPSharedInstance
+@interface ShObj : FPSharedInstance
 @end
-@implementation SO
+@implementation ShObj
 @end
 
 @interface ViewController ()
@@ -33,8 +33,8 @@
 
 - (IBAction)touchedAlertButton:(id)sender
 {
-    SO *so = [SO sharedInstance];
-    fp(@"so a0 %@", so);
+    ShObj *so = [ShObj sharedInstance];
+    fp(@"ShObj a0 %@", so);
     
     [FPAlert show:@"Title"
           message:@"Message"
@@ -42,18 +42,18 @@
            others:[NSArray arrayWithObjects:@"A", @"B", nil]
        completion:^(FPAlertResponse *alert) {
            if (alert.isCancel) {
+               fp(@"alert cancel");
                return;
            }
            
-           SO *so = [SO sharedInstance];
-           fp(@"so a1 %@", so);
+           fp(@"alert others %d", alert.index);
        }];
 }
 
 - (IBAction)touchedSheetButton:(id)sender
 {
-    SO *so = [SO sharedInstance];
-    fp(@"so b0 %@", so);
+    ShObj *so = [ShObj sharedInstance];
+    fp(@"ShObj b0 %@", so);
     
     [FPSheet show:@"Title"
            cancel:@"Cancel"
@@ -61,14 +61,15 @@
            others:[NSArray arrayWithObjects:@"A", @"B", nil]
        completion:^(FPSheetResponse *sheet) {
            if (sheet.isCancel) {
+               fp(@"sheet cancel");
                return;
            }
            if (sheet.isDestructive) {
+               fp(@"sheet destructive");
                return;
            }
            
-           SO *so = [SO sharedInstance];
-           fp(@"so b1 %@", so);
+           fp(@"sheet others %d", sheet.index);
        }];
 }
 @end
