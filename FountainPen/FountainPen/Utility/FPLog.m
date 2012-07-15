@@ -1,6 +1,7 @@
 
 #import "FPLog.h"
 
+// prinf
 void p(NSString *format, ...)
 {
     va_list args;
@@ -9,11 +10,13 @@ void p(NSString *format, ...)
     va_end(args);
 }
 
+// prinf
 void pv(NSString *format, va_list args)
 {
     NSLogv(format, args);
 }
 
+// sprint
 NSString *sp(NSString *format, ...)
 {
     va_list args;
@@ -23,6 +26,7 @@ NSString *sp(NSString *format, ...)
     return str;
 }
 
+// sprint
 NSString *spv(NSString *format, va_list args)
 {
 #if __has_feature(objc_arc)

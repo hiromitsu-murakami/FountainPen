@@ -2,7 +2,7 @@
 #import "FPSharedInstance.h"
 
 #if ! __has_feature(objc_arc)
-#error You need to either convert your project to ARC or add the -fobjc-arc compiler flag.
+#error Need "ARC" to project or "-fobjc-arc" flag to file.
 #endif
 
 @implementation FPSharedInstance
