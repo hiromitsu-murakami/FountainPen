@@ -5,7 +5,6 @@
 // Blocks argument for Sheet
 //
 @interface FPSheetResponse : NSObject
-
 @property (readonly, nonatomic, strong) UIActionSheet *sheet;   // action sheet
 @property (readonly, nonatomic) NSInteger index;          // selected index in all buttons
 @property (readonly, nonatomic) NSInteger indexInOthers;  // selected index in other buttons
