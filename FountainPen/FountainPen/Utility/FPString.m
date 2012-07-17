@@ -18,5 +18,5 @@ NSString *SfF(float     number) { return SfromF(number); }
 NSString *SfD(double    number) { return SfromD(number); }
 
 NSString *SfromI(NSInteger number) { return [NSString stringWithFormat:@"%d", number]; }
-NSString *SfromF(float number)     { return [NSString stringWithFormat:@"%g", number]; }
-NSString *SfromD(double number)    { return [NSString stringWithFormat:@"%g", number]; }
+NSString *SfromF(float     number) { return [NSString stringWithFormat:@"%g", number]; }
+NSString *SfromD(double    number) { return [NSString stringWithFormat:@"%g", number]; }
