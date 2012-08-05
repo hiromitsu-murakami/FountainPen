@@ -1,4 +1,7 @@
 
+// Category
+#import "NSObject+Convenience.h"
+
 // Utility
 #import "FPLocalize.h"
 #import "FPLog.h"
