@@ -27,7 +27,7 @@
     [FPAlert show:L10n(@"Title")
           message:L10n(@"Message")
            cancel:L10n(@"Cancel")
-           others:[NSArray arrayWithObjects:@"A", @"B", nil]
+           others:@[@"A", @"B"]
        completion:^(FPAlertResponse *alert) {
            fp(@"alert index %d", alert.index);
            
@@ -53,7 +53,7 @@
     [FPSheet show:L10n(@"Title")
            cancel:L10n(@"Cancel")
       destructive:L10n(@"Destructive")
-           others:[NSArray arrayWithObjects:@"A", @"B", nil]
+           others:@[@"A", @"B"]
        completion:^(FPSheetResponse *sheet) {
            fp(@"sheet index %d", sheet.index);
            
@@ -77,20 +77,20 @@
 // Number Button
 - (IBAction)touchedNumberButton:(id)sender
 {
-    NSInteger i = IfS(@"1");
-    float     f = FfS(@"1.234");
-    double    d = DfS(@"2.345");
+    NSInteger i = Int(@"1");
+    CGFloat   f = Float(@"1.234");
+    double    d = Double(@"2.345");
     
-    fp(@"i %d", i);
-    fp(@"f %g", f);
-    fp(@"d %g", d);
+    fp(@"int     %d", i);
+    fp(@"float   %g", f);
+    fp(@"ddouble %g", d);
     
-    NSString *is = SfI(2);
-    NSString *fs = SfF(3.456f);
-    NSString *ds = SfD(4.567);
+    NSString *is = String(@(2));
+    NSString *fs = String(@(3.456f));
+    NSString *ds = String(@(4.567));
     
-    fp(@"is %@", is);
-    fp(@"fs %@", fs);
-    fp(@"ds %@", ds);
+    fp(@"string %@", is);
+    fp(@"string %@", fs);
+    fp(@"string %@", ds);
 }
 @end

@@ -1,20 +1,14 @@
 
 #import <Foundation/Foundation.h>
 
-// string -> number
-NSInteger IfS(NSString *string);
-float     FfS(NSString *string);
-double    DfS(NSString *string);
+////////////////////////////////////////////////////////////////////////////////
+// Number/String Converter
 
-NSInteger IfromS(NSString *string);
-float     FfromS(NSString *string);
-double    DfromS(NSString *string);
+// String -> Number
+NSInteger Int   (NSString *string);
+CGFloat   Float (NSString *string);
+double    Double(NSString *string);
 
-// number -> string
-NSString *SfI(NSInteger number);
-NSString *SfF(float     number);
-NSString *SfD(double    number);
-
-NSString *SfromI(NSInteger number);
-NSString *SfromF(float     number);
-NSString *SfromD(double    number);
+// Number -> String
+// ex. String(@(value));
+NSString *String(NSNumber *number);
