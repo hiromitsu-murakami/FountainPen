@@ -1,6 +1,9 @@
 
 #import <Foundation/Foundation.h>
 
+////////////////////////////////////////////////////////////////////////////////
+// Log
+
 // prinf
 void p (NSString *format, ...);
 void pv(NSString *format, va_list args);

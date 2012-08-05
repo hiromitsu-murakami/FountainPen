@@ -7,6 +7,7 @@
 
 @implementation NSObject (Convenience)
 
+// Convenience
 + (id)create
 {
     return [[[self class] alloc] init];

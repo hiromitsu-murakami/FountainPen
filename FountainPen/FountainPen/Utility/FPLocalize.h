@@ -1,4 +1,7 @@
 
 #import <Foundation/Foundation.h>
 
+////////////////////////////////////////////////////////////////////////////////
+// Reduce the NSLocalizedString method
+
 NSString *L10n(NSString *str);
