@@ -9,5 +9,6 @@
 #import "FPSharedInstance.h"
 
 // UI
+#import "UIView+Frame.h"
 #import "FPAlert.h"
 #import "FPSheet.h"
