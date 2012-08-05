@@ -2,8 +2,8 @@
 #import <Foundation/Foundation.h>
 
 // prinf
-void       p (NSString *format, ...);
-void       pv(NSString *format, va_list args);
+void p (NSString *format, ...);
+void pv(NSString *format, va_list args);
 
 // sprint
 NSString *sp (NSString *format, ...);
