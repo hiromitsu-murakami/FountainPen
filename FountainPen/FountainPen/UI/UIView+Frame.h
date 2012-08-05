@@ -11,12 +11,15 @@
 @property (nonatomic) CGFloat w;
 @property (nonatomic) CGFloat h;
 
+// Origin
 - (void)x:(CGFloat)x
         y:(CGFloat)y;
 
+// Size
 - (void)w:(CGFloat)w
         h:(CGFloat)h;
 
+// Frame
 - (void)x:(CGFloat)x
         y:(CGFloat)y
         w:(CGFloat)w

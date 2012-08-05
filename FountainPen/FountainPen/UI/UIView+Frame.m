@@ -13,9 +13,27 @@
 - (void)setW:(CGFloat)w { [self w:w      h:self.h]; }
 - (void)setH:(CGFloat)h { [self w:self.w h:h     ]; }
 
-- (void)x:(CGFloat)x y:(CGFloat)y { [self x:x      y:y      w:self.w h:self.h]; }
-- (void)w:(CGFloat)w h:(CGFloat)h { [self x:self.x y:self.y w:w      h:h     ]; }
+// Origin
+- (void)x:(CGFloat)x
+        y:(CGFloat)y
+{
+    [self x:x
+          y:y
+          w:self.w
+          h:self.h];
+}
 
+// Size
+- (void)w:(CGFloat)w
+        h:(CGFloat)h
+{
+    [self x:self.x
+          y:self.y
+          w:w
+          h:h];
+}
+
+// Frame
 - (void)x:(CGFloat)x
         y:(CGFloat)y
         w:(CGFloat)w
