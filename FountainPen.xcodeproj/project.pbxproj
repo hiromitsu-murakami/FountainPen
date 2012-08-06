@@ -11,6 +11,7 @@
 		10004B4E15CF0FFF00C4234E /* FrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B4D15CF0FFF00C4234E /* FrameViewController.m */; };
 		10004B5115CFB44400C4234E /* NSObject+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5015CFB44300C4234E /* NSObject+Convenience.m */; };
 		10004B5215CFB44400C4234E /* NSObject+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5015CFB44300C4234E /* NSObject+Convenience.m */; };
+		10004B5915CFB55A00C4234E /* UIViewFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5815CFB55A00C4234E /* UIViewFrameTests.m */; };
 		1042AA4B15B28DE300F118A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4A15B28DE300F118A7 /* UIKit.framework */; };
 		1042AA4D15B28DE300F118A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4C15B28DE300F118A7 /* Foundation.framework */; };
 		1042AA4F15B28DE300F118A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4E15B28DE300F118A7 /* CoreGraphics.framework */; };
@@ -50,6 +51,8 @@
 		10004B4D15CF0FFF00C4234E /* FrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameViewController.m; sourceTree = "<group>"; };
 		10004B4F15CFB44200C4234E /* NSObject+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Convenience.h"; sourceTree = "<group>"; };
 		10004B5015CFB44300C4234E /* NSObject+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Convenience.m"; sourceTree = "<group>"; };
+		10004B5715CFB55A00C4234E /* UIViewFrameTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewFrameTests.h; sourceTree = "<group>"; };
+		10004B5815CFB55A00C4234E /* UIViewFrameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewFrameTests.m; sourceTree = "<group>"; };
 		1042AA4615B28DE300F118A7 /* FountainPen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FountainPen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1042AA4A15B28DE300F118A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1042AA4C15B28DE300F118A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,22 @@
 			name = Category;
 			sourceTree = "<group>";
 		};
+		10004B5515CFB4CC00C4234E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				10004B5715CFB55A00C4234E /* UIViewFrameTests.h */,
+				10004B5815CFB55A00C4234E /* UIViewFrameTests.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		10004B5615CFB4CC00C4234E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		1042AA3B15B28DE300F118A7 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +204,8 @@
 			children = (
 				1042AA7415B28DE300F118A7 /* FountainPenTests.h */,
 				1042AA7515B28DE300F118A7 /* FountainPenTests.m */,
+				10004B5615CFB4CC00C4234E /* Utility */,
+				10004B5515CFB4CC00C4234E /* UI */,
 				1042AA6F15B28DE300F118A7 /* Supporting Files */,
 			);
 			path = FountainPenTests;
@@ -388,6 +409,7 @@
 			files = (
 				1042AA7615B28DE300F118A7 /* FountainPenTests.m in Sources */,
 				10004B5215CFB44400C4234E /* NSObject+Convenience.m in Sources */,
+				10004B5915CFB55A00C4234E /* UIViewFrameTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
