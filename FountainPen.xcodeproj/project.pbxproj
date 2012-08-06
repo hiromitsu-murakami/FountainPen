@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10004B4815CEF98400C4234E /* NSObject+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B4715CEF98400C4234E /* NSObject+Convenience.m */; };
 		10004B4B15CF0C3B00C4234E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B4A15CF0C3B00C4234E /* UIView+Frame.m */; };
 		10004B4E15CF0FFF00C4234E /* FrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B4D15CF0FFF00C4234E /* FrameViewController.m */; };
+		10004B5115CFB44400C4234E /* NSObject+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5015CFB44300C4234E /* NSObject+Convenience.m */; };
+		10004B5215CFB44400C4234E /* NSObject+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5015CFB44300C4234E /* NSObject+Convenience.m */; };
 		1042AA4B15B28DE300F118A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4A15B28DE300F118A7 /* UIKit.framework */; };
 		1042AA4D15B28DE300F118A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4C15B28DE300F118A7 /* Foundation.framework */; };
 		1042AA4F15B28DE300F118A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4E15B28DE300F118A7 /* CoreGraphics.framework */; };
@@ -43,12 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10004B4615CEF98400C4234E /* NSObject+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Convenience.h"; sourceTree = "<group>"; };
-		10004B4715CEF98400C4234E /* NSObject+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Convenience.m"; sourceTree = "<group>"; };
 		10004B4915CF0C3B00C4234E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		10004B4A15CF0C3B00C4234E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		10004B4C15CF0FFF00C4234E /* FrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameViewController.h; sourceTree = "<group>"; };
 		10004B4D15CF0FFF00C4234E /* FrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameViewController.m; sourceTree = "<group>"; };
+		10004B4F15CFB44200C4234E /* NSObject+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Convenience.h"; sourceTree = "<group>"; };
+		10004B5015CFB44300C4234E /* NSObject+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Convenience.m"; sourceTree = "<group>"; };
 		1042AA4615B28DE300F118A7 /* FountainPen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FountainPen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1042AA4A15B28DE300F118A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1042AA4C15B28DE300F118A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,13 +110,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10004B4415CEF95C00C4234E /* Category */ = {
+		10004B5315CFB47A00C4234E /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				10004B4615CEF98400C4234E /* NSObject+Convenience.h */,
-				10004B4715CEF98400C4234E /* NSObject+Convenience.m */,
+				10004B4F15CFB44200C4234E /* NSObject+Convenience.h */,
+				10004B5015CFB44300C4234E /* NSObject+Convenience.m */,
 			);
-			path = Category;
+			name = Category;
+			sourceTree = "<group>";
+		};
+		10004B5415CFB48E00C4234E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				10004B4915CF0C3B00C4234E /* UIView+Frame.h */,
+				10004B4A15CF0C3B00C4234E /* UIView+Frame.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 		1042AA3B15B28DE300F118A7 = {
@@ -207,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				1042AAA215B2971600F118A7 /* FountainPen.h */,
-				10004B4415CEF95C00C4234E /* Category */,
 				1042AA9915B296CD00F118A7 /* Utility */,
 				1042AA9415B296CD00F118A7 /* UI */,
 			);
@@ -217,8 +226,7 @@
 		1042AA9415B296CD00F118A7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				10004B4915CF0C3B00C4234E /* UIView+Frame.h */,
-				10004B4A15CF0C3B00C4234E /* UIView+Frame.m */,
+				10004B5415CFB48E00C4234E /* Category */,
 				1042AA9515B296CD00F118A7 /* FPAlert.h */,
 				1042AA9615B296CD00F118A7 /* FPAlert.m */,
 				1042AA9715B296CD00F118A7 /* FPSheet.h */,
@@ -230,6 +238,7 @@
 		1042AA9915B296CD00F118A7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				10004B5315CFB47A00C4234E /* Category */,
 				1042AA9A15B296CD00F118A7 /* FPLog.h */,
 				1042AA9B15B296CD00F118A7 /* FPLog.m */,
 				1042AAA315B2A28600F118A7 /* FPLocalize.h */,
@@ -367,9 +376,9 @@
 				1042AAA115B296CD00F118A7 /* FPSharedInstance.m in Sources */,
 				1042AAA515B2A28600F118A7 /* FPLocalize.m in Sources */,
 				1042AAB015B2B40800F118A7 /* FPString.m in Sources */,
-				10004B4815CEF98400C4234E /* NSObject+Convenience.m in Sources */,
 				10004B4B15CF0C3B00C4234E /* UIView+Frame.m in Sources */,
 				10004B4E15CF0FFF00C4234E /* FrameViewController.m in Sources */,
+				10004B5115CFB44400C4234E /* NSObject+Convenience.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1042AA7615B28DE300F118A7 /* FountainPenTests.m in Sources */,
+				10004B5215CFB44400C4234E /* NSObject+Convenience.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
