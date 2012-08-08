@@ -36,6 +36,7 @@
 		1042AAA515B2A28600F118A7 /* FPLocalize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AAA415B2A28600F118A7 /* FPLocalize.m */; };
 		1042AAAA15B2A7C900F118A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1042AAAC15B2A7C900F118A7 /* Localizable.strings */; };
 		1042AAB015B2B40800F118A7 /* FPString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AAAF15B2B40800F118A7 /* FPString.m */; };
+		1058FFF015D2955600DDB7AF /* FPNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058FFEF15D2955600DDB7AF /* FPNetwork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,10 +85,10 @@
 		1042AA7215B28DE300F118A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1042AA7415B28DE300F118A7 /* FountainPenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainPenTests.h; sourceTree = "<group>"; };
 		1042AA7515B28DE300F118A7 /* FountainPenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FountainPenTests.m; sourceTree = "<group>"; };
-		1042AA9515B296CD00F118A7 /* FPAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAlert.h; sourceTree = "<group>"; };
-		1042AA9615B296CD00F118A7 /* FPAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAlert.m; sourceTree = "<group>"; };
-		1042AA9715B296CD00F118A7 /* FPSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSheet.h; sourceTree = "<group>"; };
-		1042AA9815B296CD00F118A7 /* FPSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSheet.m; sourceTree = "<group>"; };
+		1042AA9515B296CD00F118A7 /* FPAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPAlert.h; path = ../UI/FPAlert.h; sourceTree = "<group>"; };
+		1042AA9615B296CD00F118A7 /* FPAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPAlert.m; path = ../UI/FPAlert.m; sourceTree = "<group>"; };
+		1042AA9715B296CD00F118A7 /* FPSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPSheet.h; path = ../UI/FPSheet.h; sourceTree = "<group>"; };
+		1042AA9815B296CD00F118A7 /* FPSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPSheet.m; path = ../UI/FPSheet.m; sourceTree = "<group>"; };
 		1042AA9A15B296CD00F118A7 /* FPLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLog.h; sourceTree = "<group>"; };
 		1042AA9B15B296CD00F118A7 /* FPLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLog.m; sourceTree = "<group>"; };
 		1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSharedInstance.h; sourceTree = "<group>"; };
@@ -99,6 +100,8 @@
 		1042AAAD15B2A7D300F118A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1042AAAE15B2B40800F118A7 /* FPString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPString.h; sourceTree = "<group>"; };
 		1042AAAF15B2B40800F118A7 /* FPString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPString.m; sourceTree = "<group>"; };
+		1058FFEE15D2955600DDB7AF /* FPNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPNetwork.h; sourceTree = "<group>"; };
+		1058FFEF15D2955600DDB7AF /* FPNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNetwork.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,24 +128,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10004B5315CFB47A00C4234E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				10004B4F15CFB44200C4234E /* NSObject+Convenience.h */,
-				10004B5015CFB44300C4234E /* NSObject+Convenience.m */,
-			);
-			name = Category;
-			sourceTree = "<group>";
-		};
-		10004B5415CFB48E00C4234E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				10004B4915CF0C3B00C4234E /* UIView+Frame.h */,
-				10004B4A15CF0C3B00C4234E /* UIView+Frame.m */,
-			);
-			name = Category;
-			sourceTree = "<group>";
-		};
 		10004B5515CFB4CC00C4234E /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,11 +268,8 @@
 		1042AA9415B296CD00F118A7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				10004B5415CFB48E00C4234E /* Category */,
-				1042AA9515B296CD00F118A7 /* FPAlert.h */,
-				1042AA9615B296CD00F118A7 /* FPAlert.m */,
-				1042AA9715B296CD00F118A7 /* FPSheet.h */,
-				1042AA9815B296CD00F118A7 /* FPSheet.m */,
+				1058FFF515D297BC00DDB7AF /* View */,
+				1058FFF415D2979A00DDB7AF /* Dialog */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -295,15 +277,16 @@
 		1042AA9915B296CD00F118A7 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				10004B5315CFB47A00C4234E /* Category */,
+				1058FFF215D2977F00DDB7AF /* Object */,
+				1058FFF315D2979000DDB7AF /* Network */,
 				1042AA9A15B296CD00F118A7 /* FPLog.h */,
 				1042AA9B15B296CD00F118A7 /* FPLog.m */,
 				1042AAA315B2A28600F118A7 /* FPLocalize.h */,
 				1042AAA415B2A28600F118A7 /* FPLocalize.m */,
 				1042AAAE15B2B40800F118A7 /* FPString.h */,
 				1042AAAF15B2B40800F118A7 /* FPString.m */,
-				1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */,
-				1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */,
+				1058FFEE15D2955600DDB7AF /* FPNetwork.h */,
+				1058FFEF15D2955600DDB7AF /* FPNetwork.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -314,6 +297,45 @@
 				1042AAAC15B2A7C900F118A7 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1058FFF215D2977F00DDB7AF /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				10004B4F15CFB44200C4234E /* NSObject+Convenience.h */,
+				10004B5015CFB44300C4234E /* NSObject+Convenience.m */,
+				1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */,
+				1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		1058FFF315D2979000DDB7AF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		1058FFF415D2979A00DDB7AF /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA9515B296CD00F118A7 /* FPAlert.h */,
+				1042AA9615B296CD00F118A7 /* FPAlert.m */,
+				1042AA9715B296CD00F118A7 /* FPSheet.h */,
+				1042AA9815B296CD00F118A7 /* FPSheet.m */,
+			);
+			name = Dialog;
+			path = ../Utility;
+			sourceTree = "<group>";
+		};
+		1058FFF515D297BC00DDB7AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10004B4915CF0C3B00C4234E /* UIView+Frame.h */,
+				10004B4A15CF0C3B00C4234E /* UIView+Frame.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +458,7 @@
 				10004B4B15CF0C3B00C4234E /* UIView+Frame.m in Sources */,
 				10004B4E15CF0FFF00C4234E /* FrameViewController.m in Sources */,
 				10004B5115CFB44400C4234E /* NSObject+Convenience.m in Sources */,
+				1058FFF015D2955600DDB7AF /* FPNetwork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

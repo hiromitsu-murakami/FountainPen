@@ -93,4 +93,17 @@
     fp(@"string %@", fs);
     fp(@"string %@", ds);
 }
+
+- (IBAction)touchedNetworkButton:(id)sender
+{
+    [FPNetwork load:@"http://google.com"
+         completion:^(FPNetworkResponse *res) {
+             if (res.error) {
+                 p(@"error %@", res.error);
+             }
+             
+             p(@"data %d", [res.data length]);
+         }];
+}
+
 @end
