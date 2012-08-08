@@ -6,7 +6,7 @@
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
-#pragma mark - MKAlertResponse Class
+#pragma mark - FPAlertResponse Class
 
 @interface FPAlertResponse ()
 @property (readwrite, nonatomic, strong) UIAlertView *alert;
@@ -56,7 +56,7 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////
-#pragma mark - MKAlert Class
+#pragma mark - FPAlert Class
 
 @interface FPAlert () <UIAlertViewDelegate>
 @property (nonatomic, copy) alert_block_t block;

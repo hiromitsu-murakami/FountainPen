@@ -6,7 +6,7 @@
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
-#pragma mark - MKAlertResponse Class
+#pragma mark - FPSheetResponse Class
 
 @interface FPSheetResponse ()
 @property (readwrite, nonatomic, strong) UIActionSheet *sheet;
@@ -64,7 +64,7 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////
-#pragma mark - MKSheet Class
+#pragma mark - FPSheet Class
 
 @interface FPSheet () <UIActionSheetDelegate>
 @property (nonatomic, copy) sheet_block_t block;
