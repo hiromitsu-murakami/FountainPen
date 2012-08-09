@@ -18,28 +18,32 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (void)viewDidLoad
+{
+    // FPSharedInstance
+    ShObj *so = [ShObj sharedInstance];
+    p(@"ShObj %@", so);
+}
+
 // Alert Button
 - (IBAction)touchedAlertButton:(id)sender
 {
-    ShObj *so = [ShObj sharedInstance];
-    fp(@"ShObj %@", so);
-    
     [FPAlert show:L10n(@"Title")
           message:L10n(@"Message")
            cancel:L10n(@"Cancel")
            others:@[@"A", @"B"]
        completion:^(FPAlertResponse *alert) {
-           fp(@"alert index %d", alert.index);
+           p(@"alert index %d", alert.index);
            
            if (alert.isCancel) {
-               fp(@"alert cancel");
+               p(@"alert cancel");
                return;
            }
            
            switch (alert.indexInOthers) {
-               case 0:  { fp(@"alert others A"); break; }
-               case 1:  { fp(@"alert others B"); break; }
-               default: { fp(@"alert default");  break; }
+               case 0:  { p(@"alert others A"); break; }
+               case 1:  { p(@"alert others B"); break; }
+               default: { p(@"alert default");  break; }
            }
        }];
 }
@@ -47,29 +51,26 @@
 // Sheet Button
 - (IBAction)touchedSheetButton:(id)sender
 {
-    ShObj *so = [ShObj sharedInstance];
-    fp(@"ShObj %@", so);
-    
     [FPSheet show:L10n(@"Title")
            cancel:L10n(@"Cancel")
       destructive:L10n(@"Destructive")
            others:@[@"A", @"B"]
        completion:^(FPSheetResponse *sheet) {
-           fp(@"sheet index %d", sheet.index);
+           p(@"sheet index %d", sheet.index);
            
            if (sheet.isCancel) {
-               fp(@"sheet cancel");
+               p(@"sheet cancel");
                return;
            }
            if (sheet.isDestructive) {
-               fp(@"sheet destructive");
+               p(@"sheet destructive");
                return;
            }
            
            switch (sheet.indexInOthers) {
-               case 0:  { fp(@"sheet others A"); break; }
-               case 1:  { fp(@"sheet others B"); break; }
-               default: { fp(@"sheet default");  break; }
+               case 0:  { p(@"sheet others A"); break; }
+               case 1:  { p(@"sheet others B"); break; }
+               default: { p(@"sheet default");  break; }
            }
        }];
 }
@@ -81,17 +82,17 @@
     CGFloat   f = Float(@"1.234");
     double    d = Double(@"2.345");
     
-    fp(@"int     %d", i);
-    fp(@"float   %g", f);
-    fp(@"ddouble %g", d);
+    p(@"int     %d", i);
+    p(@"float   %g", f);
+    p(@"ddouble %g", d);
     
     NSString *is = String(@(2));
     NSString *fs = String(@(3.456f));
     NSString *ds = String(@(4.567));
     
-    fp(@"string %@", is);
-    fp(@"string %@", fs);
-    fp(@"string %@", ds);
+    p(@"string %@", is);
+    p(@"string %@", fs);
+    p(@"string %@", ds);
 }
 
 - (IBAction)touchedNetworkButton:(id)sender
