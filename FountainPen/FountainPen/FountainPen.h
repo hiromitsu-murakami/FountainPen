@@ -8,6 +8,7 @@
 #import "FPLog.h"
 #import "FPString.h"
 #import "FPNetwork.h"
+#import "FPThread.h"
 
 // UI
 #import "UIView+Frame.h"

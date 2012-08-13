@@ -16,6 +16,7 @@
 		10004B6115CFC98500C4234E /* FPLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B6015CFC98500C4234E /* FPLogTests.m */; };
 		10004B6415CFC99800C4234E /* FPStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B6315CFC99800C4234E /* FPStringTests.m */; };
 		10004B6715CFC9AB00C4234E /* FPSharedInstanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B6615CFC9AB00C4234E /* FPSharedInstanceTests.m */; };
+		103B485F15D4C80900C4FC06 /* FPThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 103B485E15D4C80900C4FC06 /* FPThread.m */; };
 		1042AA4B15B28DE300F118A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4A15B28DE300F118A7 /* UIKit.framework */; };
 		1042AA4D15B28DE300F118A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4C15B28DE300F118A7 /* Foundation.framework */; };
 		1042AA4F15B28DE300F118A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4E15B28DE300F118A7 /* CoreGraphics.framework */; };
@@ -66,6 +67,8 @@
 		10004B6315CFC99800C4234E /* FPStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPStringTests.m; sourceTree = "<group>"; };
 		10004B6515CFC9AB00C4234E /* FPSharedInstanceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSharedInstanceTests.h; sourceTree = "<group>"; };
 		10004B6615CFC9AB00C4234E /* FPSharedInstanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSharedInstanceTests.m; sourceTree = "<group>"; };
+		103B485D15D4C80900C4FC06 /* FPThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPThread.h; sourceTree = "<group>"; };
+		103B485E15D4C80900C4FC06 /* FPThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPThread.m; sourceTree = "<group>"; };
 		1042AA4615B28DE300F118A7 /* FountainPen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FountainPen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1042AA4A15B28DE300F118A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1042AA4C15B28DE300F118A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -287,6 +290,8 @@
 				1042AAAF15B2B40800F118A7 /* FPString.m */,
 				1058FFEE15D2955600DDB7AF /* FPNetwork.h */,
 				1058FFEF15D2955600DDB7AF /* FPNetwork.m */,
+				103B485D15D4C80900C4FC06 /* FPThread.h */,
+				103B485E15D4C80900C4FC06 /* FPThread.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				10004B4E15CF0FFF00C4234E /* FrameViewController.m in Sources */,
 				10004B5115CFB44400C4234E /* NSObject+Convenience.m in Sources */,
 				1058FFF015D2955600DDB7AF /* FPNetwork.m in Sources */,
+				103B485F15D4C80900C4FC06 /* FPThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
