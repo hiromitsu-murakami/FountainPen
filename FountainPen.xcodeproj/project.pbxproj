@@ -12,10 +12,20 @@
 		10004B5115CFB44400C4234E /* NSObject+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5015CFB44300C4234E /* NSObject+Convenience.m */; };
 		10004B5215CFB44400C4234E /* NSObject+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5015CFB44300C4234E /* NSObject+Convenience.m */; };
 		10004B5915CFB55A00C4234E /* UIViewFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5815CFB55A00C4234E /* UIViewFrameTests.m */; };
-		10004B5E15CFC7EA00C4234E /* NSObjectConvenienceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5D15CFC7EA00C4234E /* NSObjectConvenienceTests.m */; };
+		10004B5E15CFC7EA00C4234E /* NSObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B5D15CFC7EA00C4234E /* NSObjectTests.m */; };
 		10004B6115CFC98500C4234E /* FPLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B6015CFC98500C4234E /* FPLogTests.m */; };
 		10004B6415CFC99800C4234E /* FPStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B6315CFC99800C4234E /* FPStringTests.m */; };
 		10004B6715CFC9AB00C4234E /* FPSharedInstanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10004B6615CFC9AB00C4234E /* FPSharedInstanceTests.m */; };
+		1011C33A15E77C9B00B46828 /* NSObject+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011C33915E77C9B00B46828 /* NSObject+Null.m */; };
+		1011C33B15E77C9B00B46828 /* NSObject+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011C33915E77C9B00B46828 /* NSObject+Null.m */; };
+		1011C34315E792AC00B46828 /* NSString+Blank.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011C34215E792AC00B46828 /* NSString+Blank.m */; };
+		1011C34415E792AC00B46828 /* NSString+Blank.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011C34215E792AC00B46828 /* NSString+Blank.m */; };
+		1011C34715E7A4E000B46828 /* NSStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011C34615E7A4E000B46828 /* NSStringTest.m */; };
+		1011C34815E7A67700B46828 /* FPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AA9B15B296CD00F118A7 /* FPLog.m */; };
+		1011C34B15E7AABE00B46828 /* FPURLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011C34A15E7AABE00B46828 /* FPURLTest.m */; };
+		1011C34E15E7AFDD00B46828 /* FPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011C34D15E7AFDC00B46828 /* FPDate.m */; };
+		1011C34F15E7AFDD00B46828 /* FPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011C34D15E7AFDC00B46828 /* FPDate.m */; };
+		1011C35215E7B34200B46828 /* FPDateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1011C35115E7B34200B46828 /* FPDateTest.m */; };
 		103B485F15D4C80900C4FC06 /* FPThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 103B485E15D4C80900C4FC06 /* FPThread.m */; };
 		1042AA4B15B28DE300F118A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4A15B28DE300F118A7 /* UIKit.framework */; };
 		1042AA4D15B28DE300F118A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4C15B28DE300F118A7 /* Foundation.framework */; };
@@ -38,6 +48,7 @@
 		1042AAAA15B2A7C900F118A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1042AAAC15B2A7C900F118A7 /* Localizable.strings */; };
 		1042AAB015B2B40800F118A7 /* FPString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AAAF15B2B40800F118A7 /* FPString.m */; };
 		1058FFF015D2955600DDB7AF /* FPNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058FFEF15D2955600DDB7AF /* FPNetwork.m */; };
+		105A29D515DA3616001B8969 /* FPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A29D415DA3616001B8969 /* FPURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +70,26 @@
 		10004B5015CFB44300C4234E /* NSObject+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Convenience.m"; sourceTree = "<group>"; };
 		10004B5715CFB55A00C4234E /* UIViewFrameTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewFrameTests.h; sourceTree = "<group>"; };
 		10004B5815CFB55A00C4234E /* UIViewFrameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewFrameTests.m; sourceTree = "<group>"; };
-		10004B5C15CFC7EA00C4234E /* NSObjectConvenienceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectConvenienceTests.h; sourceTree = "<group>"; };
-		10004B5D15CFC7EA00C4234E /* NSObjectConvenienceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectConvenienceTests.m; sourceTree = "<group>"; };
+		10004B5C15CFC7EA00C4234E /* NSObjectTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectTests.h; sourceTree = "<group>"; };
+		10004B5D15CFC7EA00C4234E /* NSObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectTests.m; sourceTree = "<group>"; };
 		10004B5F15CFC98500C4234E /* FPLogTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLogTests.h; sourceTree = "<group>"; };
 		10004B6015CFC98500C4234E /* FPLogTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLogTests.m; sourceTree = "<group>"; };
 		10004B6215CFC99800C4234E /* FPStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPStringTests.h; sourceTree = "<group>"; };
 		10004B6315CFC99800C4234E /* FPStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPStringTests.m; sourceTree = "<group>"; };
 		10004B6515CFC9AB00C4234E /* FPSharedInstanceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSharedInstanceTests.h; sourceTree = "<group>"; };
 		10004B6615CFC9AB00C4234E /* FPSharedInstanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSharedInstanceTests.m; sourceTree = "<group>"; };
+		1011C33815E77C9B00B46828 /* NSObject+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Null.h"; sourceTree = "<group>"; };
+		1011C33915E77C9B00B46828 /* NSObject+Null.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Null.m"; sourceTree = "<group>"; };
+		1011C34115E792AC00B46828 /* NSString+Blank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Blank.h"; sourceTree = "<group>"; };
+		1011C34215E792AC00B46828 /* NSString+Blank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Blank.m"; sourceTree = "<group>"; };
+		1011C34515E7A4E000B46828 /* NSStringTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringTest.h; sourceTree = "<group>"; };
+		1011C34615E7A4E000B46828 /* NSStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringTest.m; sourceTree = "<group>"; };
+		1011C34915E7AABD00B46828 /* FPURLTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPURLTest.h; sourceTree = "<group>"; };
+		1011C34A15E7AABE00B46828 /* FPURLTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPURLTest.m; sourceTree = "<group>"; };
+		1011C34C15E7AFDC00B46828 /* FPDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDate.h; sourceTree = "<group>"; };
+		1011C34D15E7AFDC00B46828 /* FPDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDate.m; sourceTree = "<group>"; };
+		1011C35015E7B34200B46828 /* FPDateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDateTest.h; sourceTree = "<group>"; };
+		1011C35115E7B34200B46828 /* FPDateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDateTest.m; sourceTree = "<group>"; };
 		103B485D15D4C80900C4FC06 /* FPThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPThread.h; sourceTree = "<group>"; };
 		103B485E15D4C80900C4FC06 /* FPThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPThread.m; sourceTree = "<group>"; };
 		1042AA4615B28DE300F118A7 /* FountainPen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FountainPen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +128,8 @@
 		1042AAAF15B2B40800F118A7 /* FPString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPString.m; sourceTree = "<group>"; };
 		1058FFEE15D2955600DDB7AF /* FPNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPNetwork.h; sourceTree = "<group>"; };
 		1058FFEF15D2955600DDB7AF /* FPNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNetwork.m; sourceTree = "<group>"; };
+		105A29D315DA3616001B8969 /* FPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPURL.h; sourceTree = "<group>"; };
+		105A29D415DA3616001B8969 /* FPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPURL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +174,10 @@
 				10004B6315CFC99800C4234E /* FPStringTests.m */,
 				10004B6515CFC9AB00C4234E /* FPSharedInstanceTests.h */,
 				10004B6615CFC9AB00C4234E /* FPSharedInstanceTests.m */,
+				1011C34915E7AABD00B46828 /* FPURLTest.h */,
+				1011C34A15E7AABE00B46828 /* FPURLTest.m */,
+				1011C35015E7B34200B46828 /* FPDateTest.h */,
+				1011C35115E7B34200B46828 /* FPDateTest.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -165,8 +194,10 @@
 		10004B5B15CFC7D400C4234E /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				10004B5C15CFC7EA00C4234E /* NSObjectConvenienceTests.h */,
-				10004B5D15CFC7EA00C4234E /* NSObjectConvenienceTests.m */,
+				10004B5C15CFC7EA00C4234E /* NSObjectTests.h */,
+				10004B5D15CFC7EA00C4234E /* NSObjectTests.m */,
+				1011C34515E7A4E000B46828 /* NSStringTest.h */,
+				1011C34615E7A4E000B46828 /* NSStringTest.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -292,6 +323,10 @@
 				1058FFEF15D2955600DDB7AF /* FPNetwork.m */,
 				103B485D15D4C80900C4FC06 /* FPThread.h */,
 				103B485E15D4C80900C4FC06 /* FPThread.m */,
+				105A29D315DA3616001B8969 /* FPURL.h */,
+				105A29D415DA3616001B8969 /* FPURL.m */,
+				1011C34C15E7AFDC00B46828 /* FPDate.h */,
+				1011C34D15E7AFDC00B46828 /* FPDate.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -307,8 +342,12 @@
 		1058FFF215D2977F00DDB7AF /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				1011C33815E77C9B00B46828 /* NSObject+Null.h */,
+				1011C33915E77C9B00B46828 /* NSObject+Null.m */,
 				10004B4F15CFB44200C4234E /* NSObject+Convenience.h */,
 				10004B5015CFB44300C4234E /* NSObject+Convenience.m */,
+				1011C34115E792AC00B46828 /* NSString+Blank.h */,
+				1011C34215E792AC00B46828 /* NSString+Blank.m */,
 				1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */,
 				1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */,
 			);
@@ -465,6 +504,10 @@
 				10004B5115CFB44400C4234E /* NSObject+Convenience.m in Sources */,
 				1058FFF015D2955600DDB7AF /* FPNetwork.m in Sources */,
 				103B485F15D4C80900C4FC06 /* FPThread.m in Sources */,
+				105A29D515DA3616001B8969 /* FPURL.m in Sources */,
+				1011C33A15E77C9B00B46828 /* NSObject+Null.m in Sources */,
+				1011C34315E792AC00B46828 /* NSString+Blank.m in Sources */,
+				1011C34E15E7AFDD00B46828 /* FPDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,10 +518,17 @@
 				1042AA7615B28DE300F118A7 /* FountainPenTests.m in Sources */,
 				10004B5215CFB44400C4234E /* NSObject+Convenience.m in Sources */,
 				10004B5915CFB55A00C4234E /* UIViewFrameTests.m in Sources */,
-				10004B5E15CFC7EA00C4234E /* NSObjectConvenienceTests.m in Sources */,
+				10004B5E15CFC7EA00C4234E /* NSObjectTests.m in Sources */,
 				10004B6115CFC98500C4234E /* FPLogTests.m in Sources */,
 				10004B6415CFC99800C4234E /* FPStringTests.m in Sources */,
 				10004B6715CFC9AB00C4234E /* FPSharedInstanceTests.m in Sources */,
+				1011C33B15E77C9B00B46828 /* NSObject+Null.m in Sources */,
+				1011C34415E792AC00B46828 /* NSString+Blank.m in Sources */,
+				1011C34715E7A4E000B46828 /* NSStringTest.m in Sources */,
+				1011C34815E7A67700B46828 /* FPLog.m in Sources */,
+				1011C34B15E7AABE00B46828 /* FPURLTest.m in Sources */,
+				1011C34F15E7AFDD00B46828 /* FPDate.m in Sources */,
+				1011C35215E7B34200B46828 /* FPDateTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

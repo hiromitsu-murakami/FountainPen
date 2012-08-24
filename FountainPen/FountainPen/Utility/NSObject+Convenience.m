@@ -1,16 +1,16 @@
 
 #import "NSObject+Convenience.h"
 
-#if ! __has_feature(objc_arc)
-#error Need "ARC" to project or "-fobjc-arc" flag to file.
-#endif
-
 @implementation NSObject (Convenience)
 
 // Convenience
 + (id)create
 {
-    return [[[self class] alloc] init];
+#if __has_feature(objc_arc)
+    return [[[self class] alloc] init]; // ARC
+#else
+    return [[[self class] alloc] init] autorelease];
+#endif
 }
 
 @end
