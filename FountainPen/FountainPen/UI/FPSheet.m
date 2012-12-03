@@ -109,7 +109,15 @@
         sheet.cancelButtonIndex = (destructive ? 1 : 0) + [others count];
     }
     
-    [sheet showInView:[UIApplication sharedApplication].keyWindow];
+    
+    UIWindow* window = nil;
+    id<UIApplicationDelegate> appDelegate = [[UIApplication sharedApplication] delegate];
+    if ([appDelegate respondsToSelector:@selector(window)]) {
+        window = appDelegate.window;
+    } else {
+        window = [[UIApplication sharedApplication] keyWindow];
+    }
+    [sheet showInView:window];
     
     return sheet;
 }
