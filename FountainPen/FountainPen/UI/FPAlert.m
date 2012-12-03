@@ -14,10 +14,8 @@
 @end
 
 @implementation FPAlertResponse
-@synthesize alert = _alert;
-@synthesize index = _index;
-@dynamic    indexInOthers;
-@dynamic    isCancel;
+@dynamic indexInOthers;
+@dynamic isCancel;
 
 // Convenience
 + (FPAlertResponse *)createWithAlert:(UIAlertView *)alert
@@ -63,7 +61,6 @@
 @end
 
 @implementation FPAlert
-@synthesize block = _block;
 
 #pragma mark - Life Cycle
 
@@ -134,6 +131,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
                                                           index:buttonIndex];
         self.block(res);
     }
+    self.block = nil;
 }
 
 @end

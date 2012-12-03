@@ -14,11 +14,9 @@
 @end
 
 @implementation FPSheetResponse
-@synthesize sheet = _sheet;
-@synthesize index = _index;
-@dynamic    indexInOthers;
-@dynamic    isCancel;
-@dynamic    isDestructive;
+@dynamic indexInOthers;
+@dynamic isCancel;
+@dynamic isDestructive;
 
 // Convenience
 + (FPSheetResponse *)createWithSheet:(UIActionSheet *)sheet
@@ -71,7 +69,6 @@
 @end
 
 @implementation FPSheet
-@synthesize block = _block;
 
 #pragma mark - Life Cycle
 
@@ -133,6 +130,7 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
                                                           index:buttonIndex];
         self.block(res);
     }
+    self.block = nil;
 }
 
 @end
