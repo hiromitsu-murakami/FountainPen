@@ -49,7 +49,8 @@
 		1042AAB015B2B40800F118A7 /* FPString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AAAF15B2B40800F118A7 /* FPString.m */; };
 		1058FFF015D2955600DDB7AF /* FPNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058FFEF15D2955600DDB7AF /* FPNetwork.m */; };
 		105A29D515DA3616001B8969 /* FPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A29D415DA3616001B8969 /* FPURL.m */; };
-		10E261C3166C8A87001877DB /* UIImage+More.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E261C2166C8A87001877DB /* UIImage+More.m */; };
+		10E261CC166C8E71001877DB /* UIImage+More.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E261CB166C8E71001877DB /* UIImage+More.m */; };
+		10E261CD166C8E71001877DB /* UIImage+More.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E261CB166C8E71001877DB /* UIImage+More.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,8 +132,8 @@
 		1058FFEF15D2955600DDB7AF /* FPNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNetwork.m; sourceTree = "<group>"; };
 		105A29D315DA3616001B8969 /* FPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPURL.h; sourceTree = "<group>"; };
 		105A29D415DA3616001B8969 /* FPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPURL.m; sourceTree = "<group>"; };
-		10E261C1166C8A87001877DB /* UIImage+More.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+More.h"; sourceTree = "<group>"; };
-		10E261C2166C8A87001877DB /* UIImage+More.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+More.m"; sourceTree = "<group>"; };
+		10E261CA166C8E71001877DB /* UIImage+More.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+More.h"; sourceTree = "<group>"; };
+		10E261CB166C8E71001877DB /* UIImage+More.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+More.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,8 +346,6 @@
 		1058FFF215D2977F00DDB7AF /* Object */ = {
 			isa = PBXGroup;
 			children = (
-				10E261C1166C8A87001877DB /* UIImage+More.h */,
-				10E261C2166C8A87001877DB /* UIImage+More.m */,
 				1011C33815E77C9B00B46828 /* NSObject+Null.h */,
 				1011C33915E77C9B00B46828 /* NSObject+Null.m */,
 				10004B4F15CFB44200C4234E /* NSObject+Convenience.h */,
@@ -381,6 +380,8 @@
 		1058FFF515D297BC00DDB7AF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				10E261CA166C8E71001877DB /* UIImage+More.h */,
+				10E261CB166C8E71001877DB /* UIImage+More.m */,
 				10004B4915CF0C3B00C4234E /* UIView+Frame.h */,
 				10004B4A15CF0C3B00C4234E /* UIView+Frame.m */,
 			);
@@ -513,7 +514,7 @@
 				1011C33A15E77C9B00B46828 /* NSObject+Null.m in Sources */,
 				1011C34315E792AC00B46828 /* NSString+Blank.m in Sources */,
 				1011C34E15E7AFDD00B46828 /* FPDate.m in Sources */,
-				10E261C3166C8A87001877DB /* UIImage+More.m in Sources */,
+				10E261CC166C8E71001877DB /* UIImage+More.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +536,7 @@
 				1011C34B15E7AABE00B46828 /* FPURLTest.m in Sources */,
 				1011C34F15E7AFDD00B46828 /* FPDate.m in Sources */,
 				1011C35215E7B34200B46828 /* FPDateTest.m in Sources */,
+				10E261CD166C8E71001877DB /* UIImage+More.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
