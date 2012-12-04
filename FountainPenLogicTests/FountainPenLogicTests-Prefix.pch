@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'FountainPenLogicTests' target in the 'FountainPenLogicTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
