@@ -95,10 +95,12 @@
     p(@"string %@", ds);
 }
 
-- (IBAction)touchedNetworkButton:(id)sender
+- (IBAction)touchedNetworkButton:(UIButton *)sender
 {
+    sender.enabled = NO;
     [FPNetwork load:@"http://google.com"
          completion:^(FPNetworkResponse *res) {
+             sender.enabled = YES;
              if (res.error) {
                  p(@"error %@", res.error);
              }
