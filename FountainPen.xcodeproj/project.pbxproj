@@ -49,6 +49,9 @@
 		1042AAB015B2B40800F118A7 /* FPString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1042AAAF15B2B40800F118A7 /* FPString.m */; };
 		1058FFF015D2955600DDB7AF /* FPNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058FFEF15D2955600DDB7AF /* FPNetwork.m */; };
 		105A29D515DA3616001B8969 /* FPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A29D415DA3616001B8969 /* FPURL.m */; };
+		10AF08C116A79A07007313D0 /* NSArray+Monolithic.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF08C016A79A07007313D0 /* NSArray+Monolithic.m */; };
+		10AF08C216A79A07007313D0 /* NSArray+Monolithic.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF08C016A79A07007313D0 /* NSArray+Monolithic.m */; };
+		10AF08C316A79A07007313D0 /* NSArray+Monolithic.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF08C016A79A07007313D0 /* NSArray+Monolithic.m */; };
 		10C0B172166E0CD500E99F8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4E15B28DE300F118A7 /* CoreGraphics.framework */; };
 		10C0B17A166E0DE600E99F8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA6815B28DE300F118A7 /* SenTestingKit.framework */; };
 		10C0B17B166E0DE600E99F8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1042AA4A15B28DE300F118A7 /* UIKit.framework */; };
@@ -138,6 +141,8 @@
 		1058FFEF15D2955600DDB7AF /* FPNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNetwork.m; sourceTree = "<group>"; };
 		105A29D315DA3616001B8969 /* FPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPURL.h; sourceTree = "<group>"; };
 		105A29D415DA3616001B8969 /* FPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPURL.m; sourceTree = "<group>"; };
+		10AF08BF16A79A07007313D0 /* NSArray+Monolithic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Monolithic.h"; sourceTree = "<group>"; };
+		10AF08C016A79A07007313D0 /* NSArray+Monolithic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Monolithic.m"; sourceTree = "<group>"; };
 		10C0B179166E0DE600E99F8C /* FountainPenLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FountainPenLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C0B17F166E0DE600E99F8C /* FountainPenLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FountainPenLogicTests-Info.plist"; sourceTree = "<group>"; };
 		10C0B181166E0DE600E99F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -371,6 +376,8 @@
 		1058FFF215D2977F00DDB7AF /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				10AF08BF16A79A07007313D0 /* NSArray+Monolithic.h */,
+				10AF08C016A79A07007313D0 /* NSArray+Monolithic.m */,
 				1011C33815E77C9B00B46828 /* NSObject+Null.h */,
 				1011C33915E77C9B00B46828 /* NSObject+Null.m */,
 				10004B4F15CFB44200C4234E /* NSObject+Convenience.h */,
@@ -600,6 +607,7 @@
 				1011C34315E792AC00B46828 /* NSString+Blank.m in Sources */,
 				1011C34E15E7AFDD00B46828 /* FPDate.m in Sources */,
 				10E261CC166C8E71001877DB /* UIImage+More.m in Sources */,
+				10AF08C116A79A07007313D0 /* NSArray+Monolithic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +630,7 @@
 				1011C34F15E7AFDD00B46828 /* FPDate.m in Sources */,
 				1011C35215E7B34200B46828 /* FPDateTest.m in Sources */,
 				10E261CD166C8E71001877DB /* UIImage+More.m in Sources */,
+				10AF08C216A79A07007313D0 /* NSArray+Monolithic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C0B185166E0DE600E99F8C /* FountainPenLogicTests.m in Sources */,
+				10AF08C316A79A07007313D0 /* NSArray+Monolithic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,6 +879,7 @@
 				10C0B189166E0DE600E99F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
