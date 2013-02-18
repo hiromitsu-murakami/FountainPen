@@ -1,4 +1,8 @@
 
+#if ! __has_feature(objc_arc)
+#error Need "ARC" to project or "-fobjc-arc" flag to file.
+#endif
+
 #import "NSArray+Monolithic.h"
 
 
@@ -62,13 +66,8 @@
 + (id)arrayWithClass:(Class)genericsType
            withArray:(NSArray *)array
 {
-#if __has_feature(objc_arc)
     return [[[self class] alloc] initWithClass:genericsType
                                      withArray:array];
-#else
-    return [[[[self class] alloc] initWithClass:genericsType
-                                      withArray:array] autorelease];
-#endif
 }
 
 - (id)initWithClass:(Class)genericsType
@@ -119,13 +118,8 @@
 + (id)arrayWithClass:(Class)genericsType
            withArray:(NSArray *)array
 {
-#if __has_feature(objc_arc)
     return [[[self class] alloc] initWithClass:genericsType
                                      withArray:array];
-#else
-    return [[[[self class] alloc] initWithClass:genericsType
-                                      withArray:array] autorelease];
-#endif
 }
 
 - (id)initWithClass:(Class)genericsType
