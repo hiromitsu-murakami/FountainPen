@@ -23,6 +23,52 @@
     // FPSharedInstance
     ShObj *so = [ShObj sharedInstance];
     p(@"ShObj %@", so);
+    
+    [self localInstanceVariables];
+}
+
+// FPLocalInstanceVariables
+- (void)localInstanceVariables
+{
+    FPLocalInstanceVariablesSample *liv1 = [FPLocalInstanceVariablesSample create];
+    FPLocalInstanceVariablesSample *liv2 = [FPLocalInstanceVariablesSample create];
+    FPLocalInstanceVariablesSample *liv3 = [FPLocalInstanceVariablesSample create];
+    
+    liv1.name = @"liv1";
+    liv2.name = @"liv2";
+    liv3.name = @"liv3";
+    
+    p(@"1\n");
+    [liv1 sample];
+    p(@"1\n");
+    [liv1 sampleAlt];
+    p(@"1,2\n");
+    [liv2 sample];
+    [liv2 sample];
+    p(@"1\n");
+    [liv2 sampleAlt];
+    p(@"1,2,3\n");
+    [liv3 sample];
+    [liv3 sample];
+    [liv3 sample];
+    p(@"1\n");
+    [liv3 sampleAlt];
+    
+    p(@"2\n");
+    [liv1 sample];
+    p(@"2\n");
+    [liv1 sampleAlt];
+    p(@"3,4\n");
+    [liv2 sample];
+    [liv2 sample];
+    p(@"2\n");
+    [liv2 sampleAlt];
+    p(@"4,5,6\n");
+    [liv3 sample];
+    [liv3 sample];
+    [liv3 sample];
+    p(@"2\n");
+    [liv3 sampleAlt];
 }
 
 // Alert Button

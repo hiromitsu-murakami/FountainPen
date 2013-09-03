@@ -4,7 +4,7 @@
 @implementation NSObject (Convenience)
 
 // Convenience
-+ (id)create
++ (instancetype)create
 {
 #if __has_feature(objc_arc)
     return [[[self class] alloc] init]; // ARC

@@ -7,6 +7,6 @@
 @interface NSObject (Convenience)
 
 // Convenience
-+ (id)create;
++ (instancetype)create;
 
 @end

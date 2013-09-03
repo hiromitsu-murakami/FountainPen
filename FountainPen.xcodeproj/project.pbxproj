@@ -53,6 +53,9 @@
 		10AA8D2517D5DB1300673F66 /* FPNilBlocksPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8D2417D5DB1300673F66 /* FPNilBlocksPattern.m */; };
 		10AA8D2617D5DB1300673F66 /* FPNilBlocksPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8D2417D5DB1300673F66 /* FPNilBlocksPattern.m */; };
 		10AA8D2717D5DB1300673F66 /* FPNilBlocksPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8D2417D5DB1300673F66 /* FPNilBlocksPattern.m */; };
+		10AA8D2F17D5E75300673F66 /* FPLocalInstanceVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8D2E17D5E75300673F66 /* FPLocalInstanceVariables.m */; };
+		10AA8D3017D5E75300673F66 /* FPLocalInstanceVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8D2E17D5E75300673F66 /* FPLocalInstanceVariables.m */; };
+		10AA8D3117D5E75300673F66 /* FPLocalInstanceVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA8D2E17D5E75300673F66 /* FPLocalInstanceVariables.m */; };
 		10AF08C116A79A07007313D0 /* NSArray+Monolithic.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF08C016A79A07007313D0 /* NSArray+Monolithic.m */; };
 		10AF08C216A79A07007313D0 /* NSArray+Monolithic.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF08C016A79A07007313D0 /* NSArray+Monolithic.m */; };
 		10AF08C316A79A07007313D0 /* NSArray+Monolithic.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF08C016A79A07007313D0 /* NSArray+Monolithic.m */; };
@@ -151,6 +154,8 @@
 		10AA8D2417D5DB1300673F66 /* FPNilBlocksPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNilBlocksPattern.m; sourceTree = "<group>"; };
 		10AA8D2817D5DBCF00673F66 /* FPUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPUtility.h; sourceTree = "<group>"; };
 		10AA8D2917D5DBEE00673F66 /* FPUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPUI.h; sourceTree = "<group>"; };
+		10AA8D2D17D5E75300673F66 /* FPLocalInstanceVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLocalInstanceVariables.h; sourceTree = "<group>"; };
+		10AA8D2E17D5E75300673F66 /* FPLocalInstanceVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLocalInstanceVariables.m; sourceTree = "<group>"; };
 		10AF08BF16A79A07007313D0 /* NSArray+Monolithic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Monolithic.h"; sourceTree = "<group>"; };
 		10AF08C016A79A07007313D0 /* NSArray+Monolithic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Monolithic.m"; sourceTree = "<group>"; };
 		10C0B179166E0DE600E99F8C /* FountainPenLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FountainPenLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,12 +215,11 @@
 			isa = PBXGroup;
 			children = (
 				10004B5B15CFC7D400C4234E /* Category */,
+				10AA8D3217D5E8EF00673F66 /* Object */,
 				10004B5F15CFC98500C4234E /* FPLogTests.h */,
 				10004B6015CFC98500C4234E /* FPLogTests.m */,
 				10004B6215CFC99800C4234E /* FPStringTests.h */,
 				10004B6315CFC99800C4234E /* FPStringTests.m */,
-				10004B6515CFC9AB00C4234E /* FPSharedInstanceTests.h */,
-				10004B6615CFC9AB00C4234E /* FPSharedInstanceTests.m */,
 				1011C34915E7AABD00B46828 /* FPURLTest.h */,
 				1011C34A15E7AABE00B46828 /* FPURLTest.m */,
 				1011C35015E7B34200B46828 /* FPDateTest.h */,
@@ -357,8 +361,9 @@
 			isa = PBXGroup;
 			children = (
 				10AA8D2817D5DBCF00673F66 /* FPUtility.h */,
-				10AA8D2A17D5DF2900673F66 /* Object */,
+				10AA8D2B17D5E6CC00673F66 /* Macro */,
 				1058FFF215D2977F00DDB7AF /* Category */,
+				10AA8D2A17D5DF2900673F66 /* Object */,
 				1058FFF315D2979000DDB7AF /* Network */,
 				1042AA9A15B296CD00F118A7 /* FPLog.h */,
 				1042AA9B15B296CD00F118A7 /* FPLog.m */,
@@ -370,8 +375,6 @@
 				103B485E15D4C80900C4FC06 /* FPThread.m */,
 				1011C34C15E7AFDC00B46828 /* FPDate.h */,
 				1011C34D15E7AFDC00B46828 /* FPDate.m */,
-				10AA8D2317D5DB1300673F66 /* FPNilBlocksPattern.h */,
-				10AA8D2417D5DB1300673F66 /* FPNilBlocksPattern.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -426,6 +429,26 @@
 			children = (
 				1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */,
 				1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		10AA8D2B17D5E6CC00673F66 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				10AA8D2317D5DB1300673F66 /* FPNilBlocksPattern.h */,
+				10AA8D2417D5DB1300673F66 /* FPNilBlocksPattern.m */,
+				10AA8D2D17D5E75300673F66 /* FPLocalInstanceVariables.h */,
+				10AA8D2E17D5E75300673F66 /* FPLocalInstanceVariables.m */,
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		10AA8D3217D5E8EF00673F66 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				10004B6515CFC9AB00C4234E /* FPSharedInstanceTests.h */,
+				10004B6615CFC9AB00C4234E /* FPSharedInstanceTests.m */,
 			);
 			name = Object;
 			sourceTree = "<group>";
@@ -633,6 +656,7 @@
 				10AF08C116A79A07007313D0 /* NSArray+Monolithic.m in Sources */,
 				10AA8D2217D5DAAC00673F66 /* FPSwitch.m in Sources */,
 				10AA8D2517D5DB1300673F66 /* FPNilBlocksPattern.m in Sources */,
+				10AA8D2F17D5E75300673F66 /* FPLocalInstanceVariables.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +681,7 @@
 				10E261CD166C8E71001877DB /* UIImage+More.m in Sources */,
 				10AF08C216A79A07007313D0 /* NSArray+Monolithic.m in Sources */,
 				10AA8D2617D5DB1300673F66 /* FPNilBlocksPattern.m in Sources */,
+				10AA8D3017D5E75300673F66 /* FPLocalInstanceVariables.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +692,7 @@
 				10C0B185166E0DE600E99F8C /* FountainPenLogicTests.m in Sources */,
 				10AF08C316A79A07007313D0 /* NSArray+Monolithic.m in Sources */,
 				10AA8D2717D5DB1300673F66 /* FPNilBlocksPattern.m in Sources */,
+				10AA8D3117D5E75300673F66 /* FPLocalInstanceVariables.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
