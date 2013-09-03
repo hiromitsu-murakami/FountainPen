@@ -347,7 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				10AA8D2917D5DBEE00673F66 /* FPUI.h */,
-				1058FFF515D297BC00DDB7AF /* View */,
+				1058FFF515D297BC00DDB7AF /* Category */,
 				10AF09BE17D5D9C700CD9B43 /* Controll */,
 			);
 			path = UI;
@@ -357,7 +357,8 @@
 			isa = PBXGroup;
 			children = (
 				10AA8D2817D5DBCF00673F66 /* FPUtility.h */,
-				1058FFF215D2977F00DDB7AF /* Object */,
+				10AA8D2A17D5DF2900673F66 /* Object */,
+				1058FFF215D2977F00DDB7AF /* Category */,
 				1058FFF315D2979000DDB7AF /* Network */,
 				1042AA9A15B296CD00F118A7 /* FPLog.h */,
 				1042AA9B15B296CD00F118A7 /* FPLog.m */,
@@ -383,7 +384,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		1058FFF215D2977F00DDB7AF /* Object */ = {
+		1058FFF215D2977F00DDB7AF /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				10AF08BF16A79A07007313D0 /* NSArray+Monolithic.h */,
@@ -394,10 +395,8 @@
 				10004B5015CFB44300C4234E /* NSObject+Convenience.m */,
 				1011C34115E792AC00B46828 /* NSString+Blank.h */,
 				1011C34215E792AC00B46828 /* NSString+Blank.m */,
-				1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */,
-				1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */,
 			);
-			name = Object;
+			name = Category;
 			sourceTree = "<group>";
 		};
 		1058FFF315D2979000DDB7AF /* Network */ = {
@@ -411,7 +410,7 @@
 			name = Network;
 			sourceTree = "<group>";
 		};
-		1058FFF515D297BC00DDB7AF /* View */ = {
+		1058FFF515D297BC00DDB7AF /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				10E261CA166C8E71001877DB /* UIImage+More.h */,
@@ -419,7 +418,16 @@
 				10004B4915CF0C3B00C4234E /* UIView+Frame.h */,
 				10004B4A15CF0C3B00C4234E /* UIView+Frame.m */,
 			);
-			name = View;
+			name = Category;
+			sourceTree = "<group>";
+		};
+		10AA8D2A17D5DF2900673F66 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				1042AA9C15B296CD00F118A7 /* FPSharedInstance.h */,
+				1042AA9D15B296CD00F118A7 /* FPSharedInstance.m */,
+			);
+			name = Object;
 			sourceTree = "<group>";
 		};
 		10AF09BE17D5D9C700CD9B43 /* Controll */ = {
