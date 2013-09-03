@@ -32,7 +32,7 @@
           message:L10n(@"Message")
            cancel:L10n(@"Cancel")
            others:@[@"A", @"B"]
-       completion:^(FPAlertResponse *alert) {
+       completion:^(FPAlert *alert) {
            p(@"alert index %d", alert.index);
            
            if (alert.isCancel) {
@@ -55,7 +55,7 @@
            cancel:L10n(@"Cancel")
       destructive:L10n(@"Destructive")
            others:@[@"A", @"B"]
-       completion:^(FPSheetResponse *sheet) {
+       completion:^(FPSheet *sheet) {
            p(@"sheet index %d", sheet.index);
            
            if (sheet.isCancel) {

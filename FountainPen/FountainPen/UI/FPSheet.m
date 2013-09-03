@@ -1,136 +1,120 @@
 
-#import "FPSheet.h"
-
 #if ! __has_feature(objc_arc)
 #error Need "ARC" to project or "-fobjc-arc" flag to file.
 #endif
 
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - FPSheetResponse Class
+#import "FPSheet.h"
 
-@interface FPSheetResponse ()
-@property (readwrite, nonatomic, strong) UIActionSheet *sheet;
-@property (readwrite, nonatomic)         NSInteger     index;
+#import "FPUtility.h"
+
+
+@interface FPSheet ()
+@property (nonatomic, copy) FPSheetBlock block;
+
+@property (nonatomic, readwrite) NSInteger index;
 @end
 
-@implementation FPSheetResponse
-@dynamic indexInOthers;
-@dynamic isCancel;
-@dynamic isDestructive;
+@implementation FPSheet
 
-// Convenience
-+ (FPSheetResponse *)createWithSheet:(UIActionSheet *)sheet
-                               index:(NSInteger)index
-{
-    return [[[self class] alloc] initWithSheet:sheet index:index];
-}
+#pragma mark - lifecycle
 
-// initial
-- (id)initWithSheet:(UIActionSheet *)sheet
-              index:(NSInteger)index
+// 可変長のボタン（配列）
+// （配列を可変長引数に変換できる方法が分かるのであれば書き直す）
++ (instancetype)show:(NSString *)title
+              cancel:(NSString *)cancel
+         destructive:(NSString *)destructive
+              others:(NSArray *)others
+          completion:(FPSheetBlock)aBlock
 {
-    self = [super init];
-    if (self) {
-        self.sheet = sheet;
-        self.index = index;
+    // otherButtonTitlesがnilだと
+    // firstOtherButtonIndexが設定されないので、１つだけ設定しておく
+    NSString *first = ([others count]) > 0 ? others[0] : nil;
+    
+    // インスタンス
+    FPSheet *action = [[[self class] alloc] initWithTitle:title
+                                                  delegate:nil
+                                         cancelButtonTitle:nil
+                                    destructiveButtonTitle:destructive
+                                         otherButtonTitles:first, nil];
+    action.delegate = action;
+    action.block = aBlock;
+    
+    // 残りのボタン
+    for (NSString *other in others) {
+        if (first != other) {
+            [action addButtonWithTitle:other];
+        }
     }
-    return self;
+    
+    // キャンセルボタンは最後に追加しないとならない
+    if (cancel) {
+        [action addButtonWithTitle:cancel];
+        action.cancelButtonIndex = (destructive ? 1 : 0) + [others count];
+    }
+    
+    UIWindow *window = [self.class currentWindow];
+    [action showInView:window];
+    return action;
 }
+
+// keyWindow を使うと意図しない window に表示される可能性がある
++ (UIWindow *)currentWindow
+{
+    id <UIApplicationDelegate> appDelegate = [[UIApplication sharedApplication] delegate];
+    if ([appDelegate respondsToSelector:@selector(window)]) {
+        return appDelegate.window;
+    } else {
+        return [[UIApplication sharedApplication] keyWindow];
+    }
+}
+
+// 解放
+- (void)dealloc
+{
+}
+
+#pragma mark -
 
 // Public
 // selected button index in other buttons
 - (NSInteger)indexInOthers
 {
-    return self.index - self.sheet.firstOtherButtonIndex;
+    return self.index - self.firstOtherButtonIndex;
 }
 
 // Public
 // is selected cancel button
 - (BOOL)isCancel
 {
-    return (self.index == self.sheet.cancelButtonIndex);
+    return (self.index == self.cancelButtonIndex);
 }
 
 // Public
 // is selected destructive button
 - (BOOL)isDestructive
 {
-    return (self.index == self.sheet.destructiveButtonIndex);
+    return (self.index == self.destructiveButtonIndex);
 }
 
-@end
-
-
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - FPSheet Class
-
-@interface FPSheet () <UIActionSheetDelegate>
-@property (nonatomic, copy) sheet_block_t block;
-@end
-
-@implementation FPSheet
-
-#pragma mark - Life Cycle
-
-// Public
-// Show Sheet
-+ (FPSheet *)show:(NSString *)title
-           cancel:(NSString *)cancel
-      destructive:(NSString *)destructive
-           others:(NSArray *)others
-       completion:(sheet_block_t)block
+- (BOOL)isInvalidIndex
 {
-    // |firstOtherButtonIndex| is not set
-    // if |otherButtonTitles| array is |nil|.
-    NSString *first = ([others count]) > 0 ? [others objectAtIndex:0] : nil;
-    
-    // instance
-    FPSheet *sheet = [[[self class] alloc] initWithTitle:title
-                                                 delegate:nil
-                                        cancelButtonTitle:nil
-                                   destructiveButtonTitle:destructive
-                                        otherButtonTitles:first, nil];
-    sheet.delegate = sheet;
-    sheet.block    = block;
-    
-    // add other buttons
-    for (NSString *other in others) {
-        if (first != other) {
-            [sheet addButtonWithTitle:other];
-        }
-    }
-    
-    // Cancel button must be added to the end.
-    if (cancel) {
-        [sheet addButtonWithTitle:cancel];
-        sheet.cancelButtonIndex = (destructive ? 1 : 0) + [others count];
-    }
-    
-    
-    UIWindow* window = nil;
-    id<UIApplicationDelegate> appDelegate = [[UIApplication sharedApplication] delegate];
-    if ([appDelegate respondsToSelector:@selector(window)]) {
-        window = appDelegate.window;
-    } else {
-        window = [[UIApplication sharedApplication] keyWindow];
-    }
-    [sheet showInView:window];
-    
-    return sheet;
+    return (self.firstOtherButtonIndex < 0);
 }
 
 #pragma mark - UIActionSheetDelegate
 
-// Dismissed
+// 閉じた
 - (void)actionSheet:(UIActionSheet *)actionSheet
 didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    if (self.block) {
-        FPSheetResponse *res = [FPSheetResponse createWithSheet:actionSheet
-                                                          index:buttonIndex];
-        self.block(res);
+    FPSheet *sheet = (id)actionSheet;
+    if (![sheet isKindOfClass:[FPSheet class]]) {
+        return;
     }
-    self.block = nil;
+    
+    sheet.index = buttonIndex;
+    
+    FPB(self.block)(sheet);
 }
 
 @end

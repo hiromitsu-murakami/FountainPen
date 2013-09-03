@@ -1,84 +1,39 @@
 
-#import "FPAlert.h"
-
 #if ! __has_feature(objc_arc)
 #error Need "ARC" to project or "-fobjc-arc" flag to file.
 #endif
 
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - FPAlertResponse Class
+#import "FPAlert.h"
 
-@interface FPAlertResponse ()
-@property (readwrite, nonatomic, strong) UIAlertView *alert;
-@property (readwrite, nonatomic)         NSInteger   index;
-@end
+#import "FPUtility.h"
 
-@implementation FPAlertResponse
-@dynamic indexInOthers;
-@dynamic isCancel;
-
-// Convenience
-+ (FPAlertResponse *)createWithAlert:(UIAlertView *)alert
-                               index:(NSInteger)index
-{
-    return [[[self class] alloc] initWithAlert:alert index:index];
-}
-
-// initial
-- (id)initWithAlert:(UIAlertView *)alert
-              index:(NSInteger)index
-{
-    self = [super init];
-    if (self) {
-        self.alert = alert;
-        self.index = index;
-    }
-    return self;
-}
-
-// Public
-// selected button index in other buttons
-- (NSInteger)indexInOthers
-{
-    return self.index - self.alert.firstOtherButtonIndex;
-}
-
-// Public
-// is selected cancel button
-- (BOOL)isCancel
-{
-    return (self.index == self.alert.cancelButtonIndex);
-}
-
-@end
-
-
-////////////////////////////////////////////////////////////////////////////////
-#pragma mark - FPAlert Class
 
 @interface FPAlert () <UIAlertViewDelegate>
-@property (nonatomic, copy) alert_block_t block;
+@property (nonatomic, copy) FPAlertBlock block;
+
+@property (nonatomic, copy) FPPresentAlertBlock willPresentBlock;
+@property (nonatomic, copy) FPPresentAlertBlock didPresentBlock;
+
+@property (nonatomic, readwrite) NSInteger index;
 @end
 
 @implementation FPAlert
 
-#pragma mark - Life Cycle
+#pragma mark - lifecycle
 
-// Public
-// OK only
-+ (FPAlert *)showOK:(NSString *)title
-            message:(NSString *)message
+// OKのみのアラート（なにもしない）
++ (instancetype)showOK:(NSString *)title
+               message:(NSString *)message
 {
     return [[self class] showOK:title
                         message:message
                      completion:nil];
 }
 
-// Public
-// OK only + Blocks
-+ (FPAlert *)showOK:(NSString *)title
-            message:(NSString *)message
-         completion:(alert_block_t)block
+// OKのみのアラート
++ (instancetype)showOK:(NSString *)title
+               message:(NSString *)message
+            completion:(FPAlertBlock)block
 {
     return [[self class] show:title
                       message:message
@@ -87,28 +42,71 @@
                    completion:block];
 }
 
-// Public
-// Show Alert
-+ (FPAlert *)show:(NSString *)title
-          message:(NSString *)message
-           cancel:(NSString *)cancel
-           others:(NSArray *)others
-       completion:(alert_block_t)block
+// キャンセルかOKかの二択のアラート
++ (instancetype)showCancelOK:(NSString *)title
+                     message:(NSString *)message
+                  completion:(FPAlertBlock)block
 {
-    // |firstOtherButtonIndex| is not set
-    // if |otherButtonTitles| array is |nil|.
-    NSString *first = ([others count]) > 0 ? [others objectAtIndex:0] : nil;
+    return [[self class] show:title
+                      message:message
+                       cancel:L10n(@"Cancel")
+                       others:@[L10n(@"OK")]
+                   completion:block];
+}
+
+// YESNOの二択のアラート
++ (instancetype)showYesNo:(NSString *)title
+                  message:(NSString *)message
+               completion:(FPAlertBlock)block
+{
+    return [[self class] show:title
+                      message:message
+                       cancel:L10n(@"No")
+                       others:@[L10n(@"Yes")]
+                   completion:block];
+}
+
+
+// 可変長のボタン（配列）
++ (instancetype)show:(NSString *)title
+             message:(NSString *)message
+              cancel:(NSString *)cancel
+              others:(NSArray *)others
+          completion:(FPAlertBlock)block
+{
+    return [[self class] show:title
+                      message:message
+                       cancel:cancel
+                       others:others
+                  willPresent:nil
+                   didPresent:nil
+                   completion:block];
+}
++ (instancetype)show:(NSString *)title
+             message:(NSString *)message
+              cancel:(NSString *)cancel
+              others:(NSArray *)others
+         willPresent:(FPPresentAlertBlock)willPresentBlock
+          didPresent:(FPPresentAlertBlock)didPresentBlock
+          completion:(FPAlertBlock)block
+{
+    // otherButtonTitlesがnilだと
+    // firstOtherButtonIndexが設定されないので、１つだけ設定しておく
+    NSString *first = (others.count > 0) ? others[0] : nil;
     
-    // instance
+    // インスタンス
     FPAlert *alert = [[[self class] alloc] initWithTitle:title
                                                  message:message
                                                 delegate:nil
                                        cancelButtonTitle:cancel
                                        otherButtonTitles:first, nil];
     alert.delegate = alert;
-    alert.block    = block;
+    alert.block = block;
     
-    // add other buttons
+    alert.willPresentBlock = willPresentBlock;
+    alert.didPresentBlock  = didPresentBlock;
+    
+    // 残りのボタン
     for (NSString *other in others) {
         if (first != other) {
             [alert addButtonWithTitle:other];
@@ -116,22 +114,64 @@
     }
     
     [alert show];
-    
     return alert;
+}
+
+// 解放
+- (void)dealloc
+{
+}
+
+#pragma mark -
+
+// Public
+// selected button index in other buttons
+- (NSInteger)indexInOthers
+{
+    return self.index - self.firstOtherButtonIndex;
+}
+
+// Public
+// is selected cancel button
+- (BOOL)isCancel
+{
+    return (self.index == self.cancelButtonIndex);
 }
 
 #pragma mark - UIAlertViewDelegate
 
-// dismissed
+// before animation and showing view
+- (void)willPresentAlertView:(UIAlertView *)alertView
+{
+    FPB(self.willPresentBlock)((id)alertView);
+    self.willPresentBlock = nil;
+}
+
+//// after animation
+- (void)didPresentAlertView:(UIAlertView *)alertView
+{
+    // 通報理由の入力中にシャウトが来ると、新しいAlertViewがキーボードに隠れてしまうので
+    // 強制的にキーボードを非表示にしている
+    
+    [[UIApplication sharedApplication].keyWindow endEditing:YES];
+    [self endEditing:YES];
+    
+    FPB(self.didPresentBlock)((id)alertView);
+    self.didPresentBlock = nil;
+}
+
+// 閉じた
 - (void)alertView:(UIAlertView *)alertView
 didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    if (self.block) {
-        FPAlertResponse *res = [FPAlertResponse createWithAlert:alertView
-                                                          index:buttonIndex];
-        self.block(res);
+    FPAlert *alert = (id)alertView;
+    if (![alert isKindOfClass:[FPAlert class]]) {
+        return;
     }
-    self.block = nil;
+    
+    alert.index = buttonIndex;
+    
+    FPB(self.block)(alert);
 }
 
 @end
