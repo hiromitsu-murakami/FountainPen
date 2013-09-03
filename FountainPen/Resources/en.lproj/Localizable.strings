@@ -1,5 +1,10 @@
 
-"Title"       = "Title";
-"Message"     = "Message";
-"Cancel"      = "Cancel";
-"Destructive" = "Destructive";
+"FPTitle"       = "Title";
+"FPMessage"     = "Message";
+
+"FPDestructive" = "Destructive";
+
+"FPOK"     = "OK";
+"FPCancel" = "Cancel";
+"FPYes"    = "Yes";
+"FPNo"     = "No";

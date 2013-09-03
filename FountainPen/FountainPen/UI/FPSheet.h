@@ -15,6 +15,7 @@ typedef void (^FPSheetBlock)(FPSheet *sheet);
 @property (nonatomic, readonly) BOOL      isDestructive;
 @property (nonatomic, readonly) BOOL      isInvalidIndex;
 
+// 可変長のボタン（配列）
 + (instancetype)show:(NSString *)title
               cancel:(NSString *)cancelButtonTitle
          destructive:(NSString *)destructiveButtonTitle

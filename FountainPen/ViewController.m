@@ -28,9 +28,9 @@
 // Alert Button
 - (IBAction)touchedAlertButton:(id)sender
 {
-    [FPAlert show:L10n(@"Title")
-          message:L10n(@"Message")
-           cancel:L10n(@"Cancel")
+    [FPAlert show:L10n(@"FPTitle")
+          message:L10n(@"FPMessage")
+           cancel:L10n(@"FPCancel")
            others:@[@"A", @"B"]
        completion:^(FPAlert *alert) {
            p(@"alert index %d", alert.index);
@@ -51,9 +51,9 @@
 // Sheet Button
 - (IBAction)touchedSheetButton:(id)sender
 {
-    [FPSheet show:L10n(@"Title")
-           cancel:L10n(@"Cancel")
-      destructive:L10n(@"Destructive")
+    [FPSheet show:L10n(@"FPTitle")
+           cancel:L10n(@"FPCancel")
+      destructive:L10n(@"FPDestructive")
            others:@[@"A", @"B"]
        completion:^(FPSheet *sheet) {
            p(@"sheet index %d", sheet.index);

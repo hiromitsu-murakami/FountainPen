@@ -37,7 +37,7 @@
 {
     return [[self class] show:title
                       message:message
-                       cancel:@"OK"
+                       cancel:@"FPOK"
                        others:nil
                    completion:block];
 }
@@ -49,20 +49,20 @@
 {
     return [[self class] show:title
                       message:message
-                       cancel:L10n(@"Cancel")
-                       others:@[L10n(@"OK")]
+                       cancel:L10n(@"FPCancel")
+                       others:@[L10n(@"FPOK")]
                    completion:block];
 }
 
-// YESNOの二択のアラート
+// YES/NOの二択のアラート
 + (instancetype)showYesNo:(NSString *)title
                   message:(NSString *)message
                completion:(FPAlertBlock)block
 {
     return [[self class] show:title
                       message:message
-                       cancel:L10n(@"No")
-                       others:@[L10n(@"Yes")]
+                       cancel:L10n(@"FPNo")
+                       others:@[L10n(@"FPYes")]
                    completion:block];
 }
 
